@@ -7,72 +7,85 @@
   <body>
 
 	  <header class="page-header">
-	  	<img src="img/header-logo.png" width="170" height="60" alt="Gllacy Shop">
-	  	<nav class="header-menu">
-	  		<ul class="header-navigation">
-          <li>
-            <a href="catalog.html">Каталог</a>
-            <ul class="drop-down-catalog">
-              <li><a href="catalog.html">Новинки</a></li>
-              <li><a href="catalog.html">Сливочное</a></li>
-              <li><a href="catalog.html">Щербеты</a></li>
-              <li><a href="catalog.html">Фруктовый лед</a></li>
-              <li><a href="catalog.html">Мелорин</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Доставка</a></li>
-          <li><a href="#">О Компании</a></li>
-        </ul>
-	  	</nav>
+      <img class="header-logo" src="img/header-logo.png" width="170" height="60" alt="Gllacy Shop">
+      <nav class="header-menu">
+        <a href="catalog.html">Каталог</a>
+          <ul class="drop-down-catalog">
+            <li><a href="catalog.html">Новинки</a></li>
+            <li><a href="catalog.html">Сливочное</a></li>
+            <li><a href="catalog.html">Щербеты</a></li>
+            <li><a href="catalog.html">Фруктовый лед</a></li>
+            <li><a href="catalog.html">Мелорин</a></li>
+          </ul>
+        <a href="#">Доставка</a>
+        <a href="#">О Компании</a>
+      </nav>
 
-	  	<nav class="header-user-menu">
-	  		<ul class="header-user-navigation">
-	  			<li>Поиск</li>
-	  			<li>Вход</li>
-	  			<li>2 товара</li>
-	  		</ul>
-	  		<div class="header-contacts">
-	  			<p>С 10 до 20, ежедневно</p>
-	  			<p>8 812 450-25-25</p>
-	  		</div>
-	  	</nav>
-	  </header>
+      <div class="header-user-menu">
+        <div class="header-user-navigation">
+          <div class="header-user-search">Поиск</div>
+          <div class="header-user-login">Вход</div>
+          <div class="header-user-cart">Пусто</div>
+        </div>
+        <div class="header-contacts">
+          <p>С 10 до 20, ежедневно</p>
+          <a href="tel:88124502525">8 812 450-25-25</a>
+        </div>
+      </div>
+    </header>
 
   	<nav class="breadcrumbs">
-      <ul>
-        <li><a href="index.html">Главная</a></li>
-        <li><a href="#">Каталог</a></li>
-        <li>Сливочное</li>
-      </ul> 
+      <a href="index.html">Главная</a>
+      <a href="#">Каталог</a>
+      Сливочное
     </nav>
 
     <section class="catalog-filters">
       <h1>Сливочное мороженное</h1>
-      <label for="sorting">Сортировка:</label>
-      <select id="sorting">
-        <option value="1" selected>по популярности</option>
-        <option value="2">сначала недорогие</option>
-        <option value="3">сначала дорогие</option>
-        <option value="4">по жирности</option>
-      </select>
-      
-      <label for="price-range">Цена: 100 руб. - 500 руб.</label>
-      <input type="range" name="price-range" id="price-range" min="100" max="500" step="10">
+      <form class="filters" action="" method="get">
+        <fieldset>
+          <legend>Сортировка:</legend>
+          <select id="sorting" name="sorting">
+            <option value="1" selected>по популярности</option>
+            <option value="2">сначала недорогие</option>
+            <option value="3">сначала дорогие</option>
+            <option value="4">по жирности</option>
+          </select>
+        </fieldset>
+          
+        <fieldset>
+          <legend>Цена: 100 руб. - 500 руб.</legend>  
+          <input type="range" name="price-range" id="price-range" min="100" max="500" step="10">
+        </fieldset>
 
-      <label for="radio1">Жирность:</label>
-      <input type="radio" name="radio1" id="radio1" value="radio1-1">
-      <input type="radio" name="radio1" id="radio1" value="radio1-2" checked>
-      <input type="radio" name="radio1" id="radio1" value="radio1-3">
-      <input type="radio" name="radio1" id="radio1" value="radio1-4">
+        <fieldset>
+          <legend>Жирность:</legend>
+          <input type="radio" name="radio" id="radio1" value="radio1">
+          <label for="radio1">0%</label>
+          <input type="radio" name="radio" id="radio2" value="radio2" checked>
+          <label for="radio2">до 10%</label>
+          <input type="radio" name="radio" id="radio3" value="radio3">
+          <label for="radio3">до 30%</label>
+          <input type="radio" name="radio" id="radio4" value="radio4">
+          <label for="radio4">выше 30%</label>
+        </fieldset>
 
-      <label>Наполнители:</label>
-      <input type="checkbox" name="choclate" checked>шоколадные
-      <input type="checkbox" name="sugar" checked>сахарные присыпки
-      <input type="checkbox" name="fruit">фрукты
-      <input type="checkbox" name="sirup">сиропы
-      <input type="checkbox" name="jam">джемы
+        <fieldset>
+          <legend>Наполнители:</legend>
+          <input type="checkbox" id="choclate" name="choclate" checked>
+          <label for="choclate">шоколадные</label>
+          <input type="checkbox" id="sugar" name="sugar" checked>
+          <label for="sugar">сахарные присыпки</label>
+          <input type="checkbox" id="fruit" name="fruit">
+          <label for="fruit">фрукты</label>
+          <input type="checkbox" id="sirup" name="sirup">
+          <label for="sirup">сиропы</label>
+          <input type="checkbox" id="jam" name="jam">
+          <label for="jam">джемы</label>
+        </fieldset>
 
-      <button>Применить</button>
+        <input type="submit" name="submit" id="submit">Применить</input>
+      </form>
     </section>
 
     <section class="catalog-items">
@@ -150,8 +163,8 @@
         <p>Сливочное с мятным сиропом</p>
         <button class="btn-catalog-item">Быстрый просмотр</button>
       </article>
-      <div class="catalog-nav">
-        <a href="#">1</a>
+      <div class="pagination">
+        <a href="#" class="active">1</a>
         <a href="#">2</a>
         <a href="#">3</a>
         <a href="#">4</a>
@@ -160,45 +173,43 @@
     </section>
 
   	<footer class="page-footer">
-  		<article class="footer-social">
-  			<a class="social-btn social-btn-tw" href="#">Twitter</a>
-        	<a class="social-btn social-btn-in" href="#">Instagram</a>
-        	<a class="social-btn social-btn-fb" href="#">Facebook</a>
-        	<a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-        </article>
-        <ul class="footer-nav">
-        	<li>Для поставщиков</li>
-        	<li>О производстве</li>
-        </ul>
-        <ul class="footer-nav">
-        	<li>Наши документы</li>
-        	<li>Экологические стандарты</li>
-        </ul>
-        <section class="footer-copyright">
-        	<a href="http://htmlacademy.ru">HTML Academy</a>
-        	<p>Сделано в <a href="http://htmlacademy.ru">HTML Academy</a> &#169; 2017</p>
-        </section>
-  	</footer>
+        <article class="footer-social">
+          <a class="social-btn social-btn-tw" href="#">Twitter</a>
+            <a class="social-btn social-btn-in" href="#">Instagram</a>
+            <a class="social-btn social-btn-fb" href="#">Facebook</a>
+            <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+          </article>
+          <ul class="footer-nav">
+            <li><a href="#">Для поставщиков</a></li>
+            <li><a href="#">О производстве</a></li>
+            <li><a href="#">Наши документы</a></li>
+            <li><a href="#">Экологические стандарты</a></li>
+          </ul>
+          <section class="footer-copyright">
+            <a href="http://htmlacademy.ru">HTML Academy</a>
+            <p>Сделано в <a href="http://htmlacademy.ru">HTML Academy</a> &#169; 2017</p>
+          </section>
+      </footer>
 
-    <section class="modal modal-search">
-      <input type="search" name="search" placeholder="Что ищем?">
-    </section>
+      <form class="modal modal-search" action="" method="get">
+        <input type="search" name="search" placeholder="Что ищем?">
+      </form>
 
-    <section class="modal modal-login">
-      <input type="email" name="email" placeholder="Электронная почта">
-      <input type="password" name="password" placeholder="Пароль">
-      <button class="btn-enter">Войти</button>
-      <a href="#">Забыли пароль</a>
-      <a href="#">Новая регистрация</a>
-    </section>
+      <form class="modal modal-login" action="" method="post">
+        <input type="email" name="email" placeholder="Электронная почта">
+        <input type="password" name="password" placeholder="Пароль">
+        <button class="btn-enter">Войти</button>
+        <a href="#">Забыли пароль</a>
+        <a href="#">Новая регистрация</a>
+      </form>
 
-    <section class="modal modal-contact-us">
-      <h2>Мы обязательно вам ответим!</h2>
-      <input type="text" name="name" placeholder="Как вас зовут?">
-      <input type="email" name="email" placeholder="Ваша почта для ответа?">
-      <textarea rows="6" cols="40" placeholder="Напишите что-нибудь..."></textarea>
-      <button class="btn-send-question">Отправить</button>
-    </section>
+      <form class="modal modal-contact-us" action="" method="post">
+        <h2>Мы обязательно вам ответим!</h2>
+        <input type="text" name="name" placeholder="Как вас зовут?">
+        <input type="email" name="email" placeholder="Ваша почта для ответа?">
+        <textarea rows="6" cols="40" placeholder="Напишите что-нибудь..."></textarea>
+        <input class="btn-send-question" type="submit" name="">Отправить</input>
+      </form>
 
     <section class="modal modal-cart">
       <h2>Корзина</h2>
