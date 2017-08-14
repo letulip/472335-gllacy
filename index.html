@@ -27,9 +27,25 @@
 
 	  	<div class="header-user-menu">
 	  		<div class="header-user-navigation">
-	  			<div class="header-user-search">Поиск</div>
-	  			<div class="header-user-login">Вход</div>
-	  			<div class="header-user-cart">Пусто</div>
+	  			<div class="header-user-search">
+	  				<p>Поиск</p>
+	  				<form class="modal modal-search" action="" method="get">
+				  		<input type="search" name="search" placeholder="Что ищем?">
+				  	</form>
+	  			</div>
+	  			<div class="header-user-login">
+	  				<p>Вход</p>
+	  				<form class="modal modal-login" action="" method="post">
+				  		<input type="email" name="email" placeholder="Электронная почта">
+				  		<input type="password" name="password" placeholder="Пароль">
+				  		<button class="btn-enter">Войти</button>
+				  		<a href="#">Забыли пароль</a>
+				  		<a href="#">Новая регистрация</a>
+				  	</form>
+	  			</div>
+	  			<div class="header-user-cart">
+	  				<p>Пусто</p>
+	  			</div>
 	  		</div>
 	  		<div class="header-contacts">
 	  			<p>С 10 до 20, ежедневно</p>
@@ -133,7 +149,7 @@
 	  			<p>Для заказов по телефону:</p>
 	  			<p><b>8 812 450-25-25</b></p>
 	  			<p>(с 10 до 20 ежедневно)</p>
-	  			<button class="btn-contact-us">Форма обратной связи</button>
+	  			<a href="form-contact-us.html" class="btn-contact-us">Форма обратной связи</a>
 	  		</article>
 	  	</section>
 
@@ -155,18 +171,6 @@
 	        	<p>Сделано в <a href="http://htmlacademy.ru">HTML Academy</a> &#169; 2017</p>
 	        </section>
 	  	</footer>
-
-	  	<form class="modal modal-search" action="" method="get">
-	  		<input type="search" name="search" placeholder="Что ищем?">
-	  	</form>
-
-	  	<form class="modal modal-login" action="" method="post">
-	  		<input type="email" name="email" placeholder="Электронная почта">
-	  		<input type="password" name="password" placeholder="Пароль">
-	  		<button class="btn-enter">Войти</button>
-	  		<a href="#">Забыли пароль</a>
-	  		<a href="#">Новая регистрация</a>
-	  	</form>
 
 	  	<form class="modal modal-contact-us" action="" method="post">
 	  		<h2>Мы обязательно вам ответим!</h2>
