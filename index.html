@@ -136,7 +136,7 @@
 		  		<p>Подпишитесь на нашу сладкую рассылку
 				и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
 				<input type="email" name="email" placeholder="Электронная почта">
-				<button>Отправить</button>
+				<button type="submit">Отправить</button>
 		  	</article>
 	  	</section>
 	  	
@@ -154,12 +154,12 @@
 	  	</section>
 
 	  	<footer class="page-footer">
-	  		<article class="footer-social">
+	  		<section class="footer-social">
 	  			<a class="social-btn social-btn-tw" href="#">Twitter</a>
 	        	<a class="social-btn social-btn-in" href="#">Instagram</a>
 	        	<a class="social-btn social-btn-fb" href="#">Facebook</a>
 	        	<a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-	        </article>
+	        </section>
 	        <ul class="footer-nav">
 	        	<li><a href="#">Для поставщиков</a></li>
 	        	<li><a href="#">О производстве</a></li>
@@ -172,13 +172,15 @@
 	        </section>
 	  	</footer>
 
-	  	<form class="modal modal-contact-us" action="" method="post">
+	  	<section>
 	  		<h2>Мы обязательно вам ответим!</h2>
-	  		<input type="text" name="name" placeholder="Как вас зовут?">
-	  		<input type="email" name="email" placeholder="Ваша почта для ответа?">
-	  		<textarea rows="6" cols="40" placeholder="Напишите что-нибудь..."></textarea>
-	  		<input class="btn-send-question" type="submit" name="">Отправить</input>
-	  	</form>
+	  		<form class="modal modal-contact-us" action="" method="post">
+		  		<input type="text" name="name" placeholder="Как вас зовут?">
+		  		<input type="email" name="email" placeholder="Ваша почта для ответа?">
+		  		<textarea rows="6" cols="40" placeholder="Напишите что-нибудь..."></textarea>
+		  		<input class="btn-send-question" type="submit" name="">Отправить</input>
+		  	</form>
+	  	</section>
   	</div>
   </body>
 </html>

@@ -173,12 +173,12 @@
     </section>
 
   	<footer class="page-footer">
-        <article class="footer-social">
+        <section class="footer-social">
           <a class="social-btn social-btn-tw" href="#">Twitter</a>
-            <a class="social-btn social-btn-in" href="#">Instagram</a>
-            <a class="social-btn social-btn-fb" href="#">Facebook</a>
-            <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-          </article>
+          <a class="social-btn social-btn-in" href="#">Instagram</a>
+          <a class="social-btn social-btn-fb" href="#">Facebook</a>
+          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+        </section>
           <ul class="footer-nav">
             <li><a href="#">Для поставщиков</a></li>
             <li><a href="#">О производстве</a></li>
@@ -203,13 +203,15 @@
         <a href="#">Новая регистрация</a>
       </form>
 
-      <form class="modal modal-contact-us" action="" method="post">
+      <section>
         <h2>Мы обязательно вам ответим!</h2>
-        <input type="text" name="name" placeholder="Как вас зовут?">
-        <input type="email" name="email" placeholder="Ваша почта для ответа?">
-        <textarea rows="6" cols="40" placeholder="Напишите что-нибудь..."></textarea>
-        <input class="btn-send-question" type="submit" name="">Отправить</input>
-      </form>
+        <form class="modal modal-contact-us" action="" method="post">
+          <input type="text" name="name" placeholder="Как вас зовут?">
+          <input type="email" name="email" placeholder="Ваша почта для ответа?">
+          <textarea rows="6" cols="40" placeholder="Напишите что-нибудь..."></textarea>
+          <input class="btn-send-question" type="submit" name="">Отправить</input>
+        </form>
+      </section>
 
     <section class="modal modal-cart">
       <h2>Корзина</h2>
@@ -227,7 +229,7 @@
           <td>300 руб.</td>
         </tr>
       </table>
-      <button class="btn-send-question">Отправить</button>
+      <button type="submit" class="btn-send-question">Отправить</button>
     </section>
   </body>
 </html>
