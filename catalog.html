@@ -25,9 +25,45 @@
 
       <div class="header-user-menu">
         <div class="header-user-navigation">
-          <div class="header-user-search">Поиск</div>
-          <div class="header-user-login">Вход</div>
-          <div class="header-user-cart">Пусто</div>
+          <div class="header-user-search">
+            <p>Поиск</p>
+            <form class="modal modal-search" action="" method="get">
+              <label class="visually-hidden" for="search">Поиск</label>
+              <input type="search" name="search" id="search" placeholder="Что ищем?">
+            </form>
+          </div>
+          <div class="header-user-login">
+            <p>Вход</p>
+            <form class="modal modal-login" action="" method="post">
+              <label class="visually-hidden" for="email">Ваш E-mail</label>
+              <input type="email" name="email" id="email" placeholder="Электронная почта">
+              <label class="visually-hidden" for="password">Ваш пароль</label>
+              <input type="password" name="password" id="password" placeholder="Пароль">
+              <button class="btn-enter">Войти</button>
+              <a href="#">Забыли пароль</a>
+              <a href="#">Новая регистрация</a>
+            </form>
+          </div>
+          <div class="header-user-cart">
+            <section class="modal modal-cart">
+              <h2>Корзина</h2>
+              <table class="cart-table">
+                <tr>
+                  <td><img src="" alt=""></td>
+                  <td>Пломбир с апельсиновым джемом</td>
+                  <td>1,5 кг х <span>200 руб.</span></td>
+                  <td>300 руб.</td>
+                </tr>
+                <tr>
+                  <td><img src="" alt=""></td>
+                  <td>Клубничный пломбир с присыпкой из белого шоколада</td>
+                  <td>1,5 кг х <span>200 руб.</span></td>
+                  <td>300 руб.</td>
+                </tr>
+              </table>
+              <button type="submit" class="btn-send-question">Отправить</button>
+            </section>
+          </div>
         </div>
         <div class="header-contacts">
           <p>С 10 до 20, ежедневно</p>
@@ -193,45 +229,17 @@
           </section>
       </footer>
 
-      <form class="modal modal-search" action="" method="get">
-        <input type="search" name="search" placeholder="Что ищем?">
-      </form>
-
-      <form class="modal modal-login" action="" method="post">
-        <input type="email" name="email" placeholder="Электронная почта">
-        <input type="password" name="password" placeholder="Пароль">
-        <button class="btn-enter">Войти</button>
-        <a href="#">Забыли пароль</a>
-        <a href="#">Новая регистрация</a>
-      </form>
-
       <section>
         <h2 class="h2-heading question-title">Мы обязательно вам ответим!</h2>
         <form class="modal modal-contact-us" action="" method="post">
-          <input type="text" name="name" placeholder="Как вас зовут?">
-          <input type="email" name="email" placeholder="Ваша почта для ответа?">
-          <textarea rows="6" cols="40" placeholder="Напишите что-нибудь..."></textarea>
-          <input class="btn-send-question" type="submit" name="">Отправить</input>
+          <label class="visually-hidden" for="name">Ваше имя</label>
+          <input type="text" name="name" id="name" placeholder="Иван Иванович">
+          <label class="visually-hidden" for="email">Ваш E-mail</label>
+          <input type="email" name="email" id="email" placeholder="ivanov@mail.ru">
+          <label class="visually-hidden" for="sometext">Задайте Ваш ворос</label>
+          <textarea rows="6" cols="40" id="sometext" placeholder="Напишите что-нибудь..."></textarea>
+          <input class="btn-send-question" type="submit" name="Отправить">
         </form>
       </section>
-
-    <section class="modal modal-cart">
-      <h2>Корзина</h2>
-      <table class="cart-table">
-        <tr>
-          <td><img src="" alt=""></td>
-          <td>Пломбир с апельсиновым джемом</td>
-          <td>1,5 кг х <span>200 руб.</span></td>
-          <td>300 руб.</td>
-        </tr>
-        <tr>
-          <td><img src="" alt=""></td>
-          <td>Клубничный пломбир с присыпкой из белого шоколада</td>
-          <td>1,5 кг х <span>200 руб.</span></td>
-          <td>300 руб.</td>
-        </tr>
-      </table>
-      <button type="submit" class="btn-send-question">Отправить</button>
-    </section>
   </body>
 </html>

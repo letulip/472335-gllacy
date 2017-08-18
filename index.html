@@ -32,14 +32,17 @@
 	  			<div class="header-user-search">
 	  				<p>Поиск</p>
 	  				<form class="modal modal-search" action="" method="get">
-				  		<input type="search" name="search" placeholder="Что ищем?">
+	  					<label class="visually-hidden" for="search">Поиск</label>
+				  		<input type="search" name="search" id="search" placeholder="Что ищем?">
 				  	</form>
 	  			</div>
 	  			<div class="header-user-login">
 	  				<p>Вход</p>
 	  				<form class="modal modal-login" action="" method="post">
-				  		<input type="email" name="email" placeholder="Электронная почта">
-				  		<input type="password" name="password" placeholder="Пароль">
+	  					<label class="visually-hidden" for="email">Ваш E-mail</label>
+				  		<input type="email" name="email" id="email" placeholder="Электронная почта">
+				  		<label class="visually-hidden" for="password">Ваш пароль</label>
+				  		<input type="password" name="password" id="password" placeholder="Пароль">
 				  		<button class="btn-enter">Войти</button>
 				  		<a href="#">Забыли пароль</a>
 				  		<a href="#">Новая регистрация</a>
@@ -58,9 +61,9 @@
 
 	  	<section class="promo">
 			<div class="promo-slider-controls">
-				<label for="promo-1"></label>
-	            <label for="promo-2"></label>
-	            <label for="promo-3"></label>
+				<label class="visually-hidden" for="promo-1">Крем-брюле и пломбир с малиновым джемом</label>
+	            <label class="visually-hidden" for="promo-2">Шоколадный пломбир и лимонный сорбет</label>
+	            <label class="visually-hidden" for="promo-3">Пломбир с помадкой и клубничный щербет</label>
 			</div>
 			<div class="promo-slider-inner">
 				<div class="promo-slider-slides">
@@ -177,10 +180,13 @@
 	  	<section>
 	  		<h2 class="h2-heading question-title">Мы обязательно вам ответим!</h2>
 	  		<form class="modal modal-contact-us" action="" method="post">
-		  		<input type="text" name="name" placeholder="Как вас зовут?">
-		  		<input type="email" name="email" placeholder="Ваша почта для ответа?">
-		  		<textarea rows="6" cols="40" placeholder="Напишите что-нибудь..."></textarea>
-		  		<input class="btn-send-question" type="submit" name="">Отправить</input>
+	  			<label class="visually-hidden" for="name">Ваше имя</label>
+		  		<input type="text" name="name" id="name" placeholder="Иван Иванович">
+	  			<label class="visually-hidden" for="email">Ваш E-mail</label>
+		  		<input type="email" name="email" id="email" placeholder="ivanov@mail.ru">
+	  			<label class="visually-hidden" for="sometext">Задайте Ваш ворос</label>
+		  		<textarea rows="6" cols="40" id="sometext" placeholder="Напишите что-нибудь..."></textarea>
+		  		<input class="btn-send-question" type="submit" name="Отправить">
 		  	</form>
 	  	</section>
   	</div>
