@@ -14,6 +14,29 @@ body {
 	font-weight: bold;
 }
 
+.btn {
+	background-color: #ec593c;
+	padding: 10px;
+	border-radius: 15px;
+	box-shadow: 0 2px 2px 0 #550800;
+	border: 0;
+	color: #fff;
+}
+
+.btn a {
+	color: #fff;
+}
+
+.btn:hover, .btn:focus {
+	background-color: #f17c64;
+	box-shadow: 0 2px 2px 0 #ac1000;
+}
+
+.btn:active {
+	background-color: #ec593c;
+	box-shadow: inset 0 2px 2px 0 #550800;
+}
+
 .h1-heading {
 	font-size: 35px;
 	line-height: 1;
@@ -41,7 +64,7 @@ body {
 	line-height: 41px;
 }
 
-.header-manu {
+.header-menu {
 	line-height: 18px;
 }
 
@@ -104,6 +127,22 @@ body {
 .drop-down-catalog a:active {
 	background-color: #f6b5a5;
 	border-radius: 0;
+}
+
+.modal {
+	background-color: #f8f7f4;
+	border-radius: 5px;
+	color: #323232;
+	font-size: 13px;
+	font-weight: normal;
+}
+
+.modal a {
+	color: #323232;
+}
+
+.modal a:hover, .modal a:focus, .modal a:active {
+	color: #e84d37;
 }
 
 .hits-item-title a {
