@@ -1,18 +1,25 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
 body {
+	padding: 10px;
 	width: 1200px;
 	font-family: 'Roboto', sans-serif;
 	background-color: #849d8f;
+	font-size: 16px;
+	line-height: 22px;
+	color: #fff;
+	font-weight: bold;
 }
 
 .h1-heading {
 	font-size: 35px;
-	font-weight: bold;
 	line-height: 1;
-	color: #fff;
 }
 
 .h2-heading {
-	color: #fff;
 }
 
 .h3-heading {
@@ -34,8 +41,80 @@ body {
 	line-height: 41px;
 }
 
-.hits-item-title {
+.header-manu {
+	line-height: 18px;
+}
 
+.header-menu a, .drop-down-catalog a {
+	color: #fff;
+	padding: 10px 15px;
+	line-height: 18px;
+}
+
+.header-menu a:hover, .header-menu a:focus {
+	color: #333;
+	text-decoration: none;
+	background-color: #f7f6f3;
+	border-radius: 15px;
+}
+
+.header-menu a:active {
+	color: #333;
+	text-decoration: none;
+	background-color: #ededed;
+	border-radius: 15px;
+	box-shadow: inset 0 2px 2px gray;
+}
+
+.drop-down-catalog {
+	width: 145px;
+	background-color: #f8f7f4;
+	border-radius: 5px;
+	padding-left: 0;
+}
+
+.drop-down-catalog li {
+	list-style: none;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 18px;
+	padding: 10px 20px;
+}
+
+.drop-down-catalog li:first-child {
+	font-weight: bold;
+	box-shadow: 0px 11px 0px -10px #d1d0ce;
+}
+
+.drop-down-catalog a {
+	color: #333;
+	text-decoration: none;
+	padding: 0;
+}
+
+.drop-down-catalog li:hover,
+.drop-down-catalog li:focus,
+.drop-down-catalog a:hover,
+.drop-down-catalog a:focus {
+	background-color: #fbded7;
+	border-radius: 0;
+}
+
+.drop-down-catalog li:active,
+.drop-down-catalog a:active {
+	background-color: #f6b5a5;
+	border-radius: 0;
+}
+
+.hits-item-title a {
+	color: #fff;
+}
+
+.seo {
+	background-color: #e0d7bb;
+	background-image: url(../img/seo-bg.jpg);
+	background-repeat: repeat;
+	border-radius: 10px;
 }
 
 .seo-title {
@@ -44,10 +123,38 @@ body {
 	color: #323232;
 }
 
+.seo ul {
+	color: #323232;
+	font-weight: normal;
+}
+
 .news-title {
 
 }
 
 .question-title {
 
+}
+
+.header-contacts p {
+	font-size: 14px;
+	line-height: 16px;
+}
+
+.header-contacts a {
+	font-size: 22px;
+	line-height: 24px;
+	color: #fff;
+	text-decoration: none;
+}
+
+.catalog-item {
+	text-align: center;
+	width: 293px;
+	padding: 6px 13px 22px 13px;
+}
+
+.catalog-item:hover, .catalog-item:focus {
+	background-color: #9db1a5;
+	border-radius: 5px;
 }
