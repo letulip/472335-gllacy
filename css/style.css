@@ -145,6 +145,21 @@ body {
 	color: #e84d37;
 }
 
+.banner {
+	width: 45%;
+	border-radius: 15px;
+}
+
+.banner-left {
+	background-color: #621021;
+	background-image: url(../img/rasp-bg.jpg);
+}
+
+.banner-right {
+	background-color: #40271c;
+	background-image: url(../img/choco-bg.jpg);
+}
+
 .hits-item-title a {
 	color: #fff;
 }
