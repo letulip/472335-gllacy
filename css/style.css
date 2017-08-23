@@ -7,7 +7,7 @@ body {
 	padding: 10px;
 	margin: 20px;
 	width: 1200px;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Roboto', Arial, sans-serif;
 	background-color: #849d8f;
 	font-size: 16px;
 	line-height: 22px;
@@ -133,6 +133,18 @@ body {
 .drop-down-catalog a:active {
 	background-color: #f6b5a5;
 	border-radius: 0;
+	box-shadow: none;
+}
+
+.breadcrumbs a {
+	color: #fff;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 16px;
+}
+
+.breadcrumbs a:last-child {
+	text-decoration: none;
 }
 
 .modal {
@@ -282,6 +294,20 @@ body {
 	padding-left: 0;
 	font-size: 18px;
 	line-height: 22px;
+}
+
+.pagination a {
+	color: #fff;
+	text-decoration: none;
+	line-height: 18px;
+	margin-left: 10px;
+}
+
+.pagination .active {
+	color: #353535;
+	background-color: #fff;
+	border-radius: 50%;
+	padding: 5px 10px 5px 10px;
 }
 
 .page-footer a {
