@@ -479,6 +479,19 @@ input[type=radio] {
 	margin-right: 20px;
 }
 
+.map {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.contacts {
+	flex-basis: 300px;
+	margin-right: 27px;
+	padding-left: 25px;
+	height: 300px;
+	align-self: center;
+}
+
 .page-footer {
 	display: flex;
 	justify-content: space-between;
