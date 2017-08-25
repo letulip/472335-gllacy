@@ -359,6 +359,8 @@ input[type=radio] {
 
 .footer-nav {
 	list-style: none;
+	font-size: 13px;
+	line-height: 16px;
 }
 
 .footer-nav li:nth-child(1) a {
@@ -367,6 +369,8 @@ input[type=radio] {
 
 .footer-copyright {
 	font-weight: normal;
+	font-size: 12px;
+	line-height: 16px;
 }
 
 .visually-hidden {
@@ -464,4 +468,26 @@ input[type=radio] {
 
 .catalog-item {
 	flex-basis: 274px;
+}
+
+.pagination {
+	/*border: 1px solid red;*/
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	margin-right: 20px;
+}
+
+.page-footer {
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer-nav {
+	display: flex;
+	justify-content: space-between;
+	flex-basis: 315px;
+	flex-wrap: wrap;
+	padding-left: 0;
 }
