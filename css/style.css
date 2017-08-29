@@ -20,16 +20,19 @@ body {
 }
 
 .page-wrapper {
-	padding: 27px;
+	background-color: #849d8f;
+}
+
+.container {
+	padding: 0 27px;
 	width: 1200px;
 	margin: 0 auto;
-	background-color: #849d8f;
 }
 
 .btn {
 	background-color: #ec593c;
 	padding: 10px;
-	border-radius: 15px;
+	border-radius: 20px/50%;
 	box-shadow: 0 2px 2px 0 #550800;
 	border: 0;
 	color: #fff;
@@ -42,6 +45,7 @@ body {
 .btn-shop-now {
 	font-size: 32px;
 	line-height: 44px;
+	border-radius: 30px/50%;
 }
 
 .btn:hover, .btn:focus {
@@ -168,6 +172,14 @@ body {
 	display: none;
 }
 
+/*.modal-contact-us {
+	display: block;
+}
+
+.modal-login {
+	display: block;
+}*/
+
 .modal a {
 	color: #323232;
 }
@@ -196,11 +208,10 @@ input[type=radio] {
 	display: none;
 }
 
-#promo-1:checked ~ .promo-slider-controls label[for="promo-1"],
-#promo-2:checked ~ .promo-slider-controls label[for="promo-2"],
-#promo-3:checked ~ .promo-slider-controls label[for="promo-3"] {
+#promo-1:checked ~ .page-wrapper .promo-slider-controls label[for="promo-1"],
+#promo-2:checked ~ .page-wrapper .promo-slider-controls label[for="promo-2"],
+#promo-3:checked ~ .page-wrapper .promo-slider-controls label[for="promo-3"] {
 	background-color: white;
-	border: 1px solid red;
 }
 
 #promo-1:checked ~ .page-wrapper {
