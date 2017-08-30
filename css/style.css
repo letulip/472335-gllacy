@@ -369,14 +369,20 @@ input[type=radio] {
 	text-decoration: none;
 	line-height: 18px;
 	margin-left: 10px;
+	padding: 5px 10px 5px 10px;
 }
 
 .pagination .active {
 	color: #353535;
 	background-color: #fff;
 	border-radius: 50%;
-	padding: 5px 10px 5px 10px;
 }
+
+.pagination a:hover:not(.active) {
+	background-color: rgba(255, 255, 255, 0.2);
+	border-radius: 50%;
+}
+
 
 .page-footer a {
 	color: #fff;
@@ -512,7 +518,7 @@ input[type=radio] {
 	margin-right: 20px;
 }
 
-.map .page-wrapper {
+.map .container {
 	display: flex;
 	justify-content: flex-end;
 }
