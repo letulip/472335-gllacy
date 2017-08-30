@@ -306,6 +306,8 @@ input[type=radio] {
 	background-image: url(../img/seo-bg.jpg);
 	background-repeat: repeat;
 	border-radius: 10px;
+	margin-top: 35px;
+	padding: 5px 20px;
 }
 
 .seo-title {
@@ -318,6 +320,47 @@ input[type=radio] {
 .seo ul {
 	color: #323232;
 	font-weight: normal;
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding-left: 55px;
+	position: relative;
+}
+
+.seo li {
+	flex-basis: 480px;
+	flex-shrink: 0;
+	padding-bottom: 25px;
+}
+
+.seo li::before {
+	content: "";
+	position: absolute;
+	width: 52px;
+	height: 52px;
+	top: -10px;
+	left: 0;
+
+	background-image: url("../img/ice-cream.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.seo li:nth-child(2)::before {
+	background-image: url("../img/cow.svg");
+	left: 565px;
+}
+
+.seo li:nth-child(3)::before {
+	background-image: url("../img/eco.svg");
+	top: 75px;
+}
+
+.seo li:nth-child(4)::before {
+	background-image: url("../img/thermometer.svg");
+	top: 75px;
+	left: 565px;
 }
 
 .news-spam {
