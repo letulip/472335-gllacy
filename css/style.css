@@ -69,6 +69,7 @@ body {
 .h3-heading {
 	font-size: 16px;
 	line-height: 22px;
+	font-weight: 500;
 }
 
 .promo-heading {
@@ -91,7 +92,7 @@ body {
 
 .header-menu a, .drop-down-catalog a {
 	color: #fff;
-	padding: 10px 15px;
+	padding: 10px 14px;
 	line-height: 18px;
 }
 
@@ -150,6 +151,12 @@ body {
 	background-color: #f6b5a5;
 	border-radius: 0;
 	box-shadow: none;
+}
+
+.header-user-menu {
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 500;
 }
 
 .breadcrumbs a {
@@ -266,6 +273,7 @@ input[type=radio] {
 .seo-title {
 	font-size: 24px;
 	line-height: 30px;
+	font-weight: 500;
 	color: #323232;
 }
 
@@ -279,6 +287,7 @@ input[type=radio] {
 }
 
 .news-title {
+	font-weight: 500;
 
 }
 
@@ -325,6 +334,10 @@ input[type=radio] {
 	line-height: 24px;
 	color: #fff;
 	text-decoration: none;
+}
+
+.filters {
+	font-weight: 500;
 }
 
 .catalog-item {
@@ -424,37 +437,130 @@ input[type=radio] {
 
 .page-header {
 	display: flex;
-	/*border: 1px solid red;*/
 	justify-content: space-between;
 }
 
 .nav-wrapper {
 	display: flex;
 	margin-top: 30px;
+	flex-basis: 850px;
 }
 
 .header-logo {
 	margin-top: -20px;
 }
 
-.header-menu {
-	
+.header-menu a {
+	margin-right: -5px;
+}
+
+.header-menu a:first-child {
+	margin-left: -5px;
 }
 
 .header-user-menu {
 	flex-basis: 270px;
+	margin-left: 20px;
 }
 
 .header-user-navigation {
 	display: flex;
 	justify-content: space-between;
-	margin-top: 12px;
+	margin-top: 18px;
+	padding-top: 5px;
+}
+
+.header-user-navigation div {
+	background-color: rgba(255, 255, 255, 0.2);
+	border-radius: 15px/50%;
+}
+
+.header-user-navigation div:hover {
+	background-color: #fff;
+	color: #323232;
+}
+
+.header-user-navigation p {
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+
+
+.header-user-login p,
+.header-user-cart p,
+.header-user-search p {
+	position: relative;
+}
+
+.header-user-search {
+	font-size: 0;
+	width: 33px;
+	margin-left: 8px;
+}
+
+.header-user-search p::before {
+	content: "";
+	position: absolute;
+	width: 23px;
+	height: 21px;
+	left: 7px;
+	top: -1px;
+
+	background-image: url("../img/loupe-off.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.header-user-search:hover p::before {
+	background-image: url("../img/loupe.svg");
+}
+
+.header-user-login {
+	width: 92px;
+	padding-left: 43px;
+}
+
+.header-user-login p::before,
+.header-user-cart p::before {
+	content: "";
+	position: absolute;
+	width: 23px;
+	height: 21px;
+	left: -28px;
+	top: -3px;
+
+	background-image: url("../img/entrance-off.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.header-user-login:hover p::before {
+	background-image: url("../img/entrance.svg");
+}
+
+.header-user-cart {
+	width: 117px;
+	padding-left: 43px;
+	position: relative;
+}
+
+.header-user-cart p::before {
+	background-image: url("../img/basket-off.svg");
+}
+
+.header-user-cart:hover p::before {
+	background-image: url("../img/basket.svg");
 }
 
 .header-contacts {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-end;
+}
+
+.header-contacts p {
+	margin-top: 17px;
+	margin-bottom: 5px;
 }
 
 .promo-slider-inner {
