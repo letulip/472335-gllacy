@@ -42,6 +42,8 @@ body {
 	font-size: 18px;
 	line-height: 24px;
 	text-decoration: none;
+  	cursor: pointer;
+  	display: inline-block;
 }
 
 .btn-shop-now {
@@ -765,6 +767,16 @@ input[type=radio] {
 	justify-content: space-between;
 }
 
+.filters {
+	display: flex;
+	width: 880px;
+	flex-wrap: wrap;
+}
+
+.filters fieldset {
+	flex-grow: 1;
+}
+
 .catalog-items {
 	display: flex;
 	justify-content: flex-start;
@@ -780,7 +792,6 @@ input[type=radio] {
 	position: relative;
 	height: 325px;
 	text-align: center;
-	overflow: hidden;
 	position: relative;
 	margin: 20px 8px;
 }
@@ -812,9 +823,11 @@ input[type=radio] {
 }
 
 .btn-catalog-item {
-	display: inline-block;
-	width: 203px;
-	padding: 10px;
+	display: none;
+	position: absolute;
+	left: calc(50% - 100px);
+	bottom: -55px;
+  	width: 200px;
 }
 
 .hit::after {
@@ -842,9 +855,9 @@ input[type=radio] {
   z-index: 10;
 }
 
-.catalog-item:hover,
-.catalog-item:focus {
-	overflow: visible;
+.catalog-item:hover .btn-catalog-item,
+.catalog-item:focus .btn-catalog-item {
+	display: block;
 }
 
 .pagination {
