@@ -281,7 +281,7 @@ input[type=radio] {
 
 .hits-item-title {
 	margin-top: 13px;
-	padding: 0 5px;
+	padding: 0 10px;
 }
 
 .hits-item-title a {
@@ -301,7 +301,7 @@ input[type=radio] {
 }
 
 .seo {
-	height: 307px;
+	min-height: 307px;
 	background-color: #e0d7bb;
 	background-image: url(../img/seo-bg.jpg);
 	background-repeat: repeat;
@@ -324,14 +324,15 @@ input[type=radio] {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	padding-left: 55px;
-	position: relative;
+	padding: 0;
 }
 
 .seo li {
-	flex-basis: 480px;
+	flex-basis: 535px;
 	flex-shrink: 0;
 	padding-bottom: 25px;
+	position: relative;
+	padding-left: 55px;
 }
 
 .seo li::before {
@@ -340,7 +341,7 @@ input[type=radio] {
 	width: 52px;
 	height: 52px;
 	top: -10px;
-	left: 0;
+	left: -5px;
 
 	background-image: url("../img/ice-cream.svg");
 	background-repeat: no-repeat;
@@ -349,22 +350,18 @@ input[type=radio] {
 
 .seo li:nth-child(2)::before {
 	background-image: url("../img/cow.svg");
-	left: 565px;
 }
 
 .seo li:nth-child(3)::before {
 	background-image: url("../img/eco.svg");
-	top: 75px;
 }
 
 .seo li:nth-child(4)::before {
 	background-image: url("../img/thermometer.svg");
-	top: 75px;
-	left: 565px;
 }
 
 .news-spam {
-	height: 220px;
+	min-height: 220px;
 	margin-top: 40px;
 }
 
@@ -767,11 +764,15 @@ input[type=radio] {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin-top: auto;
+	margin-top: 0;
 	position: relative;
 	height: 325px;
 	text-align: center;
 	overflow: hidden;
+}
+
+.catalog-item img {
+	border-radius: 50%;
 }
 
 .btn-catalog-item {
@@ -780,7 +781,7 @@ input[type=radio] {
 	padding: 10px;
 }
 
-.catalog-item::before {
+.hit::before {
 	content: "";
 	position: absolute;
 	width: 62px;
