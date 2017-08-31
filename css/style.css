@@ -767,7 +767,7 @@ input[type=radio] {
 
 .catalog-items {
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-start;
 	flex-wrap: wrap;
 }
 
@@ -782,6 +782,15 @@ input[type=radio] {
 	text-align: center;
 	/*overflow: hidden;*/
 	position: relative;
+	margin: 20px 8px;
+}
+
+.catalog-item:nth-child(4n) {
+	margin-right: 0;
+}
+
+.catalog-item:nth-child(4n-3) {
+	margin-left: 0;
 }
 
 .catalog-item::before {
