@@ -36,7 +36,7 @@ body {
 }
 
 .btn {
-	background-image: linear-gradient( 0deg, rgb(231, 74, 53) 0%, rgb(255, 255, 255) 100%);
+	background-image: linear-gradient( 0deg, rgb(231, 74, 53) 0%, rgb(242, 104, 67) 100%);
 	padding: 10px;
 	border-radius: 20px/50%;
 	box-shadow: 0 2px 2px 0 rgba(172, 16, 0, 0.64);
@@ -59,12 +59,12 @@ body {
 }
 
 .btn:hover, .btn:focus {
-	background-color: #f17c64;
+	background-image: -webkit-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
 	box-shadow: 0 2px 2px 0 #ac1000;
 }
 
 .btn:active {
-	background-color: #ec593c;
+	background-image: -webkit-linear-gradient( 90deg, rgb(242,104,67) 0%, rgb(231,74,53) 100%);
 	box-shadow: inset 0 2px 2px 0 #550800;
 }
 
@@ -91,6 +91,7 @@ body {
 .catalog-header {
 	text-align: left;
 	margin-top: 5px;
+	margin-bottom: 30px;
 }
 
 .banner-heading {
@@ -237,14 +238,18 @@ body {
 .promo-slider-controls label {
 	font-size: 0;
 	display: inline-block;
-    width: 19px;
-    height: 19px;
+    width: 20px;
+    height: 20px;
     margin: 0 3px;
     border-radius: 50%;
     box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.8);
     cursor: pointer;
     border: 2px solid white;
     background-color: transparent;
+}
+
+.promo-slider-controls label:hover {
+	background-color: rgba(255, 255, 255, 0.4);
 }
 
 input[type=radio] {
@@ -274,7 +279,7 @@ input[type=radio] {
 
 .banner {
 	width: 560px;
-	height: 230px;
+	min-height: 230px;
 	border-radius: 15px;
 	padding: 20px;
 	background-repeat: no-repeat;
@@ -504,7 +509,7 @@ input[type=radio] {
 	margin-top: 62px;
 	padding-left: 24px;
 	padding-top: 29px;
-	height: 300px;
+	min-height: 300px;
 	align-self: center;
 }
 
@@ -554,7 +559,7 @@ input[type=radio] {
 	color: #fff;
 	text-decoration: none;
 	line-height: 18px;
-	margin-left: 10px;
+	margin-left: 0;
 	padding: 5px 10px 5px 10px;
 }
 
@@ -750,7 +755,7 @@ input[type=radio] {
 	flex-shrink: 0;
 	padding-left: 234px;
 	padding-right: 234px;
-	height: 490px;
+	min-height: 490px;
 }
 
 #promo-1:checked ~ .page-wrapper .promo-slider-slides:nth-child(1) {
@@ -791,22 +796,134 @@ input[type=radio] {
 
 .filters {
 	display: flex;
-	width: 880px;
+	width: 860px;
 	flex-wrap: wrap;
+}
+
+.filters legend {
+	margin-top: 10px;
+	margin-bottom: 5px;
+	font-size: 14px;
+	line-height: 16px;
+	padding-left: 15px;
 }
 
 .filters fieldset {
 	flex-grow: 1;
 	border: none;
 	padding: 0;
+	margin-bottom: 15px;
 }
 
 .field-wrapper {
 	background-color: rgba(255, 255, 255, 0.2);
 	border-radius: 20px/50%;
-	padding: 10px;
+	padding: 7px;
 	position: relative;
-	min-height: 42px;
+	min-height: 36px;
+	margin-right: 10px;
+}
+
+.field-sort {
+	min-width: 190px;
+}
+
+.field-sort:hover,
+.field-sort:focus {
+	background-color: #fff;
+}
+
+select[id="sorting"] {
+	border: none;
+	background-color: transparent;
+	padding-left: 5px;
+	color: #fff;
+}
+
+select[id="sorting"]:hover,
+select[id="sorting"]:focus {
+	color: #000;
+}
+
+.field-price {
+	min-width: 215px;
+}
+
+.field-price:hover {
+	cursor: pointer;
+}
+
+.field-fat {
+	min-width: 415px;
+	margin-right: 0;
+}
+
+.field-fat input[type="radio"] {
+	display: none;
+}
+
+.field-fat label,
+.field-fill label {
+	margin-left: 35px;
+	margin-right: 15px;
+	position: relative;
+}
+
+.field-fat label:last-child,
+.field-fill label:last-child {
+	margin-right: 0;
+}
+
+.field-fat label::before,
+.field-fill label::before {
+	content: "";
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	top: -2px;
+	left: -30px;
+
+	background-image: url("../img/radio-off.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-color: transparent;
+	border-radius: 50%;
+	opacity: 0.8;
+}
+
+.field-fat label:hover::before,
+.field-fill label:hover::before {
+	opacity: 1;
+}
+
+#field-fat-1:checked ~ label[for="field-fat-1"]::before,
+#field-fat-2:checked ~ label[for="field-fat-2"]::before,
+#field-fat-3:checked ~ label[for="field-fat-3"]::before,
+#field-fat-4:checked ~ label[for="field-fat-4"]::before {
+	background-image: url("../img/radio-on.svg");
+	opacity: 1;
+}
+
+.field-fill {
+	min-width: 700px;
+}
+
+.field-fill input[type="checkbox"] {
+	display: none;
+}
+
+.field-fill label::before {
+	background-image: url("../img/checkbox-off.svg");
+	border-radius: 0;
+}
+
+#choclate:checked ~ label[for="choclate"]::before,
+#sugar:checked ~ label[for="sugar"]::before,
+#fruit:checked ~ label[for="fruit"]::before,
+#sirup:checked ~ label[for="sirup"]::before,
+#jam:checked ~ label[for="jam"]::before {
+	background-image: url("../img/checkbox-on.svg");
+	opacity: 1;
 }
 
 .scale {
@@ -839,13 +956,42 @@ input[type=radio] {
 }
 
 .max {
-  right: 70px;
+  right: 60px;
+}
+
+.btn-filters-submit {
+	background-color: rgba(255,255,255,0.5);
+	background-image: none;
+	font-size: 16px;
+	line-height: 18px;
+	padding: 7px 15px;
+	border-radius: 20px/50%;
+	border: 2px solid #fff;
+	color: #fff;
+	margin-top: auto;
+	margin-bottom: 15px;
+	min-width: 140px;
+}
+
+.btn-filters-submit:hover, 
+.btn-filters-submit:focus {
+	background-color: #fff;
+	color: #000;
+}
+
+.btn-filters-submit:active {
+	background-color: #ededed;
+	box-shadow: inset 0px 2px 1px 0px rgba(105, 105, 105, 0.2);
+	border: none;
+	padding: 8px 16px;
 }
 
 .catalog-items {
 	display: flex;
 	justify-content: flex-start;
 	flex-wrap: wrap;
+	margin-top: 20px;
+	margin-bottom: 30px;
 }
 
 .catalog-item {
@@ -855,10 +1001,10 @@ input[type=radio] {
 	align-items: center;
 	margin-top: 0;
 	position: relative;
-	height: 325px;
+	min-height: 325px;
 	text-align: center;
 	position: relative;
-	margin: 20px 8px;
+	margin: 10px 8px;
 }
 
 .catalog-item:nth-child(4n) {
@@ -872,7 +1018,7 @@ input[type=radio] {
 .catalog-item::before {
 	background-color: rgba(255, 255, 255, 0.2);
 	border-radius: 5px;
-	height: 405px;
+	min-height: 405px;
 	top: -7px;
   	right: -14px;
   	bottom: -36px;
@@ -885,13 +1031,15 @@ input[type=radio] {
 
 .catalog-item img {
 	border-radius: 50%;
+	width: 267px;
+	height: 267px;
 }
 
 .btn-catalog-item {
 	display: none;
 	position: absolute;
 	left: calc(50% - 100px);
-	bottom: -55px;
+	bottom: -45px;
   	width: 200px;
 }
 
@@ -931,6 +1079,7 @@ input[type=radio] {
 	justify-content: flex-end;
 	align-items: center;
 	margin-right: 20px;
+	margin-top: 55px;
 }
 
 .page-footer {
@@ -1008,7 +1157,7 @@ input[type=radio] {
 }
 
 .social-btn:nth-child(4)::before {
-	background-image: url("../img/vk.svg");
+	background-image: url("../img/vk.svg"); 
 	left: 151px;
 }
 
