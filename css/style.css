@@ -229,24 +229,22 @@ body {
 
 .modal {
 	background-color: #f8f7f4;
-	border-radius: 5px;
 	color: #323232;
 	font-size: 13px;
 	font-weight: normal;
 	margin-top: 5px;
 	display: none;
-}
-
-.modal-search {
 	border-radius: 6px;
-  	background-color: #f8f7f4;
-  	box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
-	height: 85px;
-	width: 342px;
+	box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
 	position: absolute;
 }
 
-#search {
+.modal-search {
+	height: 85px;
+	width: 342px;
+}
+
+.input-field {
 	flex-grow: 1;
 	color: #999;
 	border-style: solid;
@@ -258,6 +256,43 @@ body {
   	line-height: 24px;
   	padding: 10px;
   	margin: 20px 15px;
+}
+
+.modal-login {
+	width: 277px;
+	height: 214px;
+	flex-direction: column;
+}
+
+.modal-login .input-field {
+	margin-bottom: 10px;
+}
+
+.modal-login input[type=password] {
+	margin-top: 10px;
+}
+
+.modal-login-enter {
+	display: flex;
+	margin: 20px 15px;
+	margin-top: 10px;
+	justify-content: flex-start;
+}
+
+.btn-enter {
+	margin-right: 15px;
+	min-width: 100px;
+}
+
+.modal-login-forgot {
+	display: flex;
+	flex-direction: column;
+}
+
+.modal-login-forgot a {
+	text-decoration: underline;
+	font-size: 13px;
+	line-height: 20px;
 }
 
 .modal a {
@@ -709,6 +744,7 @@ input[type=radio] {
 
 
 .header-user-login p,
+.header-user-cart-empty p,
 .header-user-cart p,
 .header-user-search p {
 	position: relative;
@@ -749,7 +785,8 @@ input[type=radio] {
 }
 
 .header-user-login p::before,
-.header-user-cart p::before {
+.header-user-cart-empty p::before,
+.header-user-cart p::before  {
 	content: "";
 	position: absolute;
 	width: 23px;
@@ -762,22 +799,38 @@ input[type=radio] {
 	background-position: 0 0;
 }
 
-.header-user-login:hover p::before {
+.header-user-login:hover p::before,
+.header-user-login:focus p::before {
 	background-image: url("../img/entrance.svg");
 }
 
-.header-user-cart {
-	width: 117px;
-	padding-left: 43px;
-	position: relative;
+.header-user-login:hover .modal-login,
+.header-user-login:focus .modal-login {
+	display: flex;
 }
 
-.header-user-cart p::before {
+.header-user-cart,
+.header-user-cart-empty {
+	width: 117px;
+	padding-left: 43px;
+}
+
+.header-user-cart-empty p::before {
 	background-image: url("../img/basket-off.svg");
 }
 
-.header-user-cart:hover p::before {
+.header-user-cart-empty:hover p::before,
+.header-user-cart-empty:focus p::before {
 	background-image: url("../img/basket.svg");
+}
+
+.header-user-cart p::before {
+	background-image: url("../img/basket-red.svg");
+}
+
+.header-user-cart:hover .modal-cart,
+.header-user-cart:focus .modal-cart {
+	display: flex;
 }
 
 .header-contacts {
@@ -1021,6 +1074,7 @@ select[id="sorting"]:focus {
 	margin-top: auto;
 	margin-bottom: 15px;
 	min-width: 140px;
+	cursor: pointer;
 }
 
 .btn-filters-submit:hover, 

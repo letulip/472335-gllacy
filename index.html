@@ -37,22 +37,26 @@
 	  				<p>Поиск</p>
 	  				<form class="modal modal-search" action="" method="get">
 	  					<label class="visually-hidden" for="search">Поиск</label>
-				  		<input type="search" name="search" id="search" placeholder="Что ищем?">
+				  		<input class="input-field" type="search" name="search" id="search" placeholder="Что ищем?">
 				  	</form>
 	  			</div>
 	  			<div class="header-user-login">
 	  				<p>Вход</p>
 	  				<form class="modal modal-login" action="" method="post">
 	  					<label class="visually-hidden" for="email">Ваш E-mail</label>
-				  		<input type="email" name="email" id="email" placeholder="Электронная почта">
+				  		<input class="input-field" type="email" name="email" id="email" placeholder="Электронная почта">
 				  		<label class="visually-hidden" for="password">Ваш пароль</label>
-				  		<input type="password" name="password" id="password" placeholder="Пароль">
-				  		<button type="button" class="btn btn btn-enter">Войти</button type="button">
-				  		<a href="#">Забыли пароль</a>
-				  		<a href="#">Новая регистрация</a>
+				  		<input class="input-field" type="password" name="password" id="password" placeholder="Пароль">
+				  		<div class="modal-login-enter">
+					  		<button type="button" class="btn btn-enter">Войти</button type="button">
+					  		<div class="modal-login-forgot">
+					  			<a href="#">Забыли пароль?</a>
+					  			<a href="#">Новая регистрация</a>
+					  		</div>
+				  		</div>
 				  	</form>
 	  			</div>
-	  			<div class="header-user-cart">
+	  			<div class="header-user-cart-empty">
 	  				<p>Пусто</p>
 	  			</div>
 	  		</div>
@@ -132,8 +136,6 @@
 	  		<ul>
 	  			<li>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
 		  		<li>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
-		  		<li>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</li>
-		  		<li>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</li>
 		  		<li>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</li>
 		  		<li>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</li>
 	  		</ul>
