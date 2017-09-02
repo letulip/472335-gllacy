@@ -233,10 +233,11 @@ body {
 	font-size: 13px;
 	font-weight: normal;
 	margin-top: 5px;
-	display: none;
+	right: 0;
 	border-radius: 6px;
 	box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
 	position: absolute;
+	display: none;
 }
 
 .modal-search {
@@ -302,6 +303,21 @@ body {
 	text-decoration: underline;
 	font-size: 13px;
 	line-height: 20px;
+}
+
+.modal-cart {
+	width: 539px;
+	height: 242px;
+	flex-direction: column;
+}
+
+.total {
+	align-self: flex-end;
+}
+
+.btn-order {
+	min-width: 170px;
+	align-self: center;
 }
 
 .modal a {
@@ -734,6 +750,7 @@ input[type=radio] {
 	justify-content: space-between;
 	margin-top: 18px;
 	padding-top: 5px;
+	position: relative;
 }
 
 .header-user-navigation div {
@@ -752,10 +769,10 @@ input[type=radio] {
 }
 
 
-.header-user-login p,
-.header-user-cart-empty p,
-.header-user-cart p,
-.header-user-search p {
+.login-icon,
+.header-user-cart-empty .cart-icon,
+.cart-icon,
+.search-icon {
 	position: relative;
 }
 
@@ -765,7 +782,7 @@ input[type=radio] {
 	margin-left: 8px;
 }
 
-.header-user-search p::before {
+.search-icon::before {
 	content: "";
 	position: absolute;
 	width: 23px;
@@ -793,9 +810,9 @@ input[type=radio] {
 	padding-left: 43px;
 }
 
-.header-user-login p::before,
-.header-user-cart-empty p::before,
-.header-user-cart p::before  {
+.login-icon::before,
+.header-user-cart-empty .cart-icon::before,
+.cart-icon::before  {
 	content: "";
 	position: absolute;
 	width: 23px;
@@ -824,16 +841,16 @@ input[type=radio] {
 	padding-left: 43px;
 }
 
-.header-user-cart-empty p::before {
+.header-user-cart-empty .cart-icon::before {
 	background-image: url("../img/basket-off.svg");
 }
 
-.header-user-cart-empty:hover p::before,
-.header-user-cart-empty:focus p::before {
+.header-user-cart-empty:hover .cart-icon::before,
+.header-user-cart-empty:focus .cart-icon::before {
 	background-image: url("../img/basket.svg");
 }
 
-.header-user-cart p::before {
+.cart-icon::before {
 	background-image: url("../img/basket-red.svg");
 }
 
@@ -854,7 +871,6 @@ input[type=radio] {
 }
 
 .promo-slider-inner {
-	
 	overflow: hidden;
 }
 
