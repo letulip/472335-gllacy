@@ -31,8 +31,12 @@ body {
 	margin: 0 auto;
 }
 
+.catalog-body {
+	background-image: -webkit-linear-gradient(top, rgba(255,255,255,0.4) 0%,rgba(255,255,255,0) 100%);
+}
+
 .btn {
-	background-image: linear-gradient( 0deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+	background-image: linear-gradient( 0deg, rgb(231, 74, 53) 0%, rgb(255, 255, 255) 100%);
 	padding: 10px;
 	border-radius: 20px/50%;
 	box-shadow: 0 2px 2px 0 rgba(172, 16, 0, 0.64);
@@ -84,14 +88,21 @@ body {
 	margin-bottom: 20px;
 }
 
-.catalog-heading {
+.catalog-header {
 	text-align: left;
+	margin-top: 5px;
 }
 
 .banner-heading {
 	font-size: 35px;
 	line-height: 41px;
 	margin: 0;
+}
+
+.header-navigation-wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 117px;
 }
 
 .header-menu {
@@ -167,15 +178,26 @@ body {
 	font-weight: 500;
 }
 
-.breadcrumbs a {
+.breadcrumbs {
+	margin-top: auto;
+}
+
+.bc-nav {
 	color: #fff;
 	font-weight: normal;
 	font-size: 14px;
 	line-height: 16px;
+	margin-right: 17px;
+	position: relative;
 }
 
-.breadcrumbs a:last-child {
+.bc-nav::after {
+	content: "";
+}
+
+.bc-nav-active {
 	text-decoration: none;
+	margin-right: 0;
 }
 
 .modal {
@@ -594,7 +616,7 @@ input[type=radio] {
 .nav-wrapper {
 	display: flex;
 	margin-top: 30px;
-	flex-basis: 850px;
+	/*flex-basis: 850px;*/
 }
 
 .header-logo {

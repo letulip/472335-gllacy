@@ -8,26 +8,34 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-  <div class="page-wrapper">
+  <div class="page-wrapper catalog-body">
     <div class="container">
 
   	  <header class="page-header">
-      <div class="nav-wrapper">
-          <a href="index.html"><img class="header-logo" src="img/logo.svg" width="154" height="64" alt="Gllacy Shop"></a>
-          <nav class="header-menu">
-            <a href="catalog.html">Каталог</a>
-              <ul class="drop-down-catalog">
-                <li><a href="catalog.html">Новинки</a></li>
-                <li class="active-page"><a href="catalog.html">Сливочное</a></li>
-                <li><a href="catalog.html">Щербеты</a></li>
-                <li><a href="catalog.html">Фруктовый лед</a></li>
-                <li><a href="catalog.html">Мелорин</a></li>
-              </ul>
-            <a href="#">Доставка и оплата</a>
-            <a href="#">О Компании</a>
-          </nav>
-        </div>
+        <div class="header-navigation-wrapper">
+          <div class="nav-wrapper">
+            <a href="index.html"><img class="header-logo" src="img/logo.svg" width="154" height="64" alt="Gllacy Shop"></a>
+            <nav class="header-menu">
+              <a href="catalog.html">Каталог</a>
+                <ul class="drop-down-catalog">
+                  <li><a href="catalog.html">Новинки</a></li>
+                  <li class="active-page"><a href="catalog.html">Сливочное</a></li>
+                  <li><a href="catalog.html">Щербеты</a></li>
+                  <li><a href="catalog.html">Фруктовый лед</a></li>
+                  <li><a href="catalog.html">Мелорин</a></li>
+                </ul>
+              <a href="#">Доставка и оплата</a>
+              <a href="#">О Компании</a>
+            </nav>
+          </div>
 
+          <div class="breadcrumbs">
+            <a class="bc-nav" href="index.html">Главная</a>
+            <a class="bc-nav"  href="#">Каталог</a>
+            <a class="bc-nav bc-nav-active"  href="#">Сливочное</a>
+          </div>
+        </div>
+      
         <div class="header-user-menu">
           <div class="header-user-navigation">
             <div class="header-user-search">
@@ -78,14 +86,8 @@
         </div>
       </header>
 
-    	<div class="breadcrumbs">
-        <a href="index.html">Главная</a>
-        <a href="#">Каталог</a>
-        <a href="#">Сливочное</a>
-      </div>
-
       <section class="catalog-filters">
-        <h1 class="h1-heading catalog-header">Сливочное мороженное</h1>
+        <h1 class="h1-heading catalog-header">Сливочное мороженое</h1>
         <form class="filters" action="" method="get">
           <fieldset>
             <legend>Сортировка:</legend>
