@@ -89,43 +89,56 @@
         <form class="filters" action="" method="get">
           <fieldset>
             <legend>Сортировка:</legend>
-            <select id="sorting" name="sorting">
-              <option value="1" selected>по популярности</option>
-              <option value="2">сначала недорогие</option>
-              <option value="3">сначала дорогие</option>
-              <option value="4">по жирности</option>
-            </select>
+            <div class="field-wrapper">
+              <select id="sorting" name="sorting">
+                <option value="1" selected>по популярности</option>
+                <option value="2">сначала недорогие</option>
+                <option value="3">сначала дорогие</option>
+                <option value="4">по жирности</option>
+              </select>
+            </div>
           </fieldset>
             
           <fieldset>
-            <legend>Цена: 100 руб. - 500 руб.</legend>  
-            <input type="range" name="price-range" id="price-range" min="100" max="500" step="10">
+            <legend>Цена: 100 руб. - 500 руб.</legend>
+            <div class="field-wrapper">
+              <!-- <input type="range" name="price-range" id="price-range" min="100" max="500" step="10"> -->
+              <div class="scale">
+                <div class="bar"></div>
+                <div class="range-btn min">min</div>
+                <div class="range-btn max">max</div>
+              </div>
+            </div>
           </fieldset>
 
           <fieldset>
             <legend>Жирность:</legend>
-            <input type="radio" name="radio" id="radio1" value="radio1">
-            <label for="radio1">0%</label>
-            <input type="radio" name="radio" id="radio2" value="radio2" checked>
-            <label for="radio2">до 10%</label>
-            <input type="radio" name="radio" id="radio3" value="radio3">
-            <label for="radio3">до 30%</label>
-            <input type="radio" name="radio" id="radio4" value="radio4">
-            <label for="radio4">выше 30%</label>
+            <div class="field-wrapper">
+              <input type="radio" name="radio" id="radio1" value="radio1">
+              <label for="radio1">0%</label>
+              <input type="radio" name="radio" id="radio2" value="radio2" checked>
+              <label for="radio2">до 10%</label>
+              <input type="radio" name="radio" id="radio3" value="radio3">
+              <label for="radio3">до 30%</label>
+              <input type="radio" name="radio" id="radio4" value="radio4">
+              <label for="radio4">выше 30%</label>
+            </div>
           </fieldset>
 
           <fieldset>
             <legend>Наполнители:</legend>
-            <input type="checkbox" id="choclate" name="choclate" checked>
-            <label for="choclate">шоколадные</label>
-            <input type="checkbox" id="sugar" name="sugar" checked>
-            <label for="sugar">сахарные присыпки</label>
-            <input type="checkbox" id="fruit" name="fruit">
-            <label for="fruit">фрукты</label>
-            <input type="checkbox" id="sirup" name="sirup">
-            <label for="sirup">сиропы</label>
-            <input type="checkbox" id="jam" name="jam">
-            <label for="jam">джемы</label>
+            <div class="field-wrapper">
+              <input type="checkbox" id="choclate" name="choclate" checked>
+              <label for="choclate">шоколадные</label>
+              <input type="checkbox" id="sugar" name="sugar" checked>
+              <label for="sugar">сахарные присыпки</label>
+              <input type="checkbox" id="fruit" name="fruit">
+              <label for="fruit">фрукты</label>
+              <input type="checkbox" id="sirup" name="sirup">
+              <label for="sirup">сиропы</label>
+              <input type="checkbox" id="jam" name="jam">
+              <label for="jam">джемы</label>
+            </div>
           </fieldset>
 
           <input type="submit" name="submit" id="submit" value="Применить"></input>
