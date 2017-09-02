@@ -59,20 +59,6 @@ body {
 	margin: 5px;
 }
 
-.Подложка {
-  background-image: -moz-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
-  background-image: -webkit-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
-  background-image: -ms-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
-  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.004);
-  position: absolute;
-  left: 360px;
-  top: 1485px;
-  width: 280px;
-  height: 65px;
-  z-index: 214;
-}
-
-
 .btn:hover, .btn:focus {
 	background-image: -webkit-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
 	opacity: 0.8;
@@ -247,24 +233,40 @@ body {
 	color: #323232;
 	font-size: 13px;
 	font-weight: normal;
+	margin-top: 5px;
 	display: none;
 }
 
-.modal-contact-us:hover,
-.modal-contact-us:focus {
-	display: block;
+.modal-search {
+	border-radius: 6px;
+  	background-color: #f8f7f4;
+  	box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+	height: 85px;
+	width: 342px;
+	position: absolute;
 }
 
-.modal-login:hover,
-.modal-login:focus {
-	display: block;
+#search {
+	flex-grow: 1;
+	color: #999;
+	border-style: solid;
+ 	border-width: 1px;
+  	border-color: #d3d3d3;
+  	border-radius: 5px;
+  	background-color: #fff;
+  	font-size: 14px;
+  	line-height: 24px;
+  	padding: 10px;
+  	margin: 20px 15px;
 }
 
 .modal a {
 	color: #323232;
 }
 
-.modal a:hover, .modal a:focus, .modal a:active {
+.modal a:hover,
+.modal a:focus,
+.modal a:active {
 	color: #e84d37;
 }
 
@@ -731,8 +733,14 @@ input[type=radio] {
 	background-position: 0 0;
 }
 
-.header-user-search:hover p::before {
+.header-user-search:hover p::before,
+.header-user-search:focus p::before {
 	background-image: url("../img/loupe.svg");
+}
+
+.header-user-search:hover .modal-search,
+.header-user-search:focus .modal-search {
+	display: flex;
 }
 
 .header-user-login {
