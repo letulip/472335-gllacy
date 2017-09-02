@@ -258,6 +258,15 @@ body {
   	margin: 20px 15px;
 }
 
+.input-field:hover,
+.input-field:focus {
+	border-color: #9a9a9a;
+}
+
+.input-field:active {
+	border-color: #2e88e4;
+}
+
 .modal-login {
 	width: 277px;
 	height: 214px;
@@ -1243,6 +1252,7 @@ select[id="sorting"]:focus {
 	height: 38px;
 	top: 37px;
 	left: 4px;
+	opacity: 0.5;
 
 	background-image: url("../img/twitter.svg");
 	background-repeat: no-repeat;
@@ -1264,6 +1274,10 @@ select[id="sorting"]:focus {
 .social-btn:nth-child(4)::before {
 	background-image: url("../img/vk.svg"); 
 	left: 151px;
+}
+
+.social-btn:hover::before {
+	opacity: 1;
 }
 
 .footer-copyright {
