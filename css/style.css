@@ -472,6 +472,8 @@ input[type=radio] {
 	padding: 20px;
 	background-repeat: no-repeat;
 	position: relative;
+	display: flex;
+	flex-direction: column;
 }
 
 .banner p {
@@ -490,9 +492,8 @@ input[type=radio] {
 }
 
 .btn-add-jam, .btn-add-choco {
-	position: absolute;
-	right: 23px;
-	bottom: 26px;
+	margin-left: auto;
+	margin-top: auto;
 	padding: 10px 20px; 
 }
 
@@ -1413,4 +1414,12 @@ select[id="sorting"]:focus {
 
 .footer-copyright p {
 	margin-top: 60px;
+}
+
+.modal-show {
+	display: flex;
+}
+
+.modal-close {
+	display: none;
 }
