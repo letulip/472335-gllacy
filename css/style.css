@@ -332,6 +332,7 @@ body {
 .modal-contact-us .input-field {
 	margin: 10px 0;
 	min-width: 265px;
+	flex-grow: 0;
 }
 
 .modal-contact-us textarea {
