@@ -33,15 +33,15 @@
 
 	  	<div class="header-user-menu">
 	  		<div class="header-user-navigation">
-	  			<div class="header-user-search">
-	  				<p class="search-icon">Поиск</p>
+	  			<div class="header-user-search user-nav-bg">
+	  				<p class="search-icon popup">Поиск</p>
 	  				<form class="modal modal-search" action="#" method="get">
-	  					<label class="visually-hidden" for="search">Поиск</label>
+	  					<label class="input-label" for="search">Поиск</label>
 				  		<input class="input-field" type="search" name="search" id="search" placeholder="Что ищем?">
 				  	</form>
 	  			</div>
-	  			<div class="header-user-login">
-	  				<p class="login-icon">Вход</p>
+	  			<div class="header-user-login user-nav-bg">
+	  				<p class="login-icon popup">Вход</p>
 	  				<form class="modal modal-login" action="#" method="post">
 	  					<label class="visually-hidden" for="email">Ваш E-mail</label>
 				  		<input class="input-field" type="email" name="email" id="login-email" placeholder="Электронная почта">
@@ -56,8 +56,8 @@
 				  		</div>
 				  	</form>
 	  			</div>
-	  			<div class="header-user-cart-empty">
-	  				<p class="cart-icon">Пусто</p>
+	  			<div class="header-user-cart-empty user-nav-bg">
+	  				<p class="cart-icon popup">Пусто</p>
 	  			</div>
 	  		</div>
 	  		<div class="header-contacts">
@@ -107,25 +107,25 @@
 	  	<section class="hits">
 	  		<article class="catalog-item hit">
 		        <img src="img/cream-orange.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="267" height="267">
-		        <p class="price">310&#8381;<span>/кг</span></p>
+		        <p class="price">310<span class="ruble">P</span><span class="kilo">/кг</span></p>
 		        <h3 class="h3-heading hits-item-title"><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h3>
 		        <button type="button" class="btn btn-catalog-item">Быстрый просмотр</button>
 		      </article>
 		      <article class="catalog-item hit">
 		        <img src="img/cream-coffee.jpg" alt="Сливочно-кофейное с кусочками шоколада" width="267" height="267">
-		        <p class="price">380&#8381;<span>/кг</span></p>
+		        <p class="price">380<span class="ruble">P</span><span class="kilo">/кг</span></p>
 		        <h3 class="h3-heading hits-item-title"><a href="#">Сливочно-кофейное с кусочками шоколада</a></h3>
 		        <button type="button" class="btn btn-catalog-item">Быстрый просмотр</button>
 		      </article>
 		      <article class="catalog-item hit">
 		        <img src="img/cream-straw.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="267" height="267"> 
-		        <p class="price">355&#8381;<span>/кг</span></p>
+		        <p class="price">355<span class="ruble">P</span><span class="kilo">/кг</span></p>
 		        <h3 class="h3-heading hits-item-title"><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></h3>
 		        <button type="button" class="btn btn-catalog-item">Быстрый просмотр</button>
 		      </article>
 		      <article class="catalog-item hit">
 		        <img src="img/cream-brulee.jpg" alt="Сливочное крем-брюле с карамельной подливкой" width="267" height="267">
-		        <p class="price">415&#8381;<span>/кг</span></p>
+		        <p class="price">415<span class="ruble">P</span><span class="kilo">/кг</span></p>
 		        <h3 class="h3-heading hits-item-title"><a href="#">Сливочное крем-брюле с карамельной подливкой</a></h3>
 		        <button type="button" class="btn btn-catalog-item">Быстрый просмотр</button>
 		      </article>
@@ -148,10 +148,12 @@
 		  	</article>
 
 		  	<article class="spam">
-		  		<p>Подпишитесь на нашу сладкую рассылку
-				и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
-				<input type="email" name="email" placeholder="Электронная почта">
-				<button type="submit" class="btn btn-send-email">Отправить</button>
+		  		<div class="spam-wrapper">
+		  			<p>Подпишитесь на нашу сладкую рассылку
+					и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
+					<input class="input-field" type="email" name="email" placeholder="Электронная почта">
+					<button type="submit" class="btn btn-send-email">Отправить</button>
+		  		</div>
 		  	</article>
 	  	</section>
 	</div>
@@ -170,6 +172,7 @@
 
 		  			<div class="modal modal-contact-us">
 				  		<h2 class="h2-heading question-title">Мы обязательно вам ответим!</h2>
+				  		<span class="close">Закрыть</span>
 				  		<form class="form-contact-us" action="#" method="post">
 				  			<label class="visually-hidden" for="name">Ваше имя</label>
 					  		<input class="input-field" type="text" name="name" id="name" placeholder="Иван Иванович">
@@ -187,10 +190,10 @@
 		<div class="container">
 		  	<footer class="page-footer">
 		  		<section class="footer-social">
-		  			<a class="social-btn btn-tw" href="#"><span class="visually-hidden">Twitter</span></a>
-		        	<a class="social-btn btn-in" href="#"><span class="visually-hidden">Instagram</span></a>
-		        	<a class="social-btn btn-fb" href="#"><span class="visually-hidden">Facebook</span></a>
-		        	<a class="social-btn btn-vk" href="#"><span class="visually-hidden">Вконтакте</span></a>
+		  			<a class="social-btn btn-tw" href="#">Twitter</a>
+		        	<a class="social-btn btn-in" href="#">Instagram</a>
+		        	<a class="social-btn btn-fb" href="#">Facebook</a>
+		        	<a class="social-btn btn-vk" href="#">Вконтакте</a>
 		        </section>
 		        <ul class="footer-nav-list">
 		        	<li class="footer-nav-item"><a class="footer-nav-link" href="#">Для поставщиков</a></li>
