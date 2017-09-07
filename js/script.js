@@ -1,11 +1,14 @@
 "use strict";
 
 var show = document.querySelector(".header-user-search");
-var popup = document.querySelector(".modal-login");
+var popup = document.querySelector(".modal-search");
 
-function modalShow(evt) {
+// show.addEventListener("click", function (evt) {
+// 	evt.preventDefault();
+// 	popup.classList.toggle("modal-show");
+// });
+
+show.onclick = function (evt) {
 	evt.preventDefault();
 	popup.classList.toggle("modal-show");
 }
-
-show.addEventListener("click", modalShow(evt));

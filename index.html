@@ -36,17 +36,17 @@
 	  			<div class="header-user-search user-nav-bg">
 	  				<p class="search-icon popup">Поиск</p>
 	  				<form class="modal modal-search" action="#" method="get">
-	  					<label class="input-label" for="search">Поиск</label>
 				  		<input class="input-field" type="search" name="search" id="search" placeholder="Что ищем?">
+	  					<label class="input-label" for="search">Что ищем?</label>
 				  	</form>
 	  			</div>
 	  			<div class="header-user-login user-nav-bg">
 	  				<p class="login-icon popup">Вход</p>
 	  				<form class="modal modal-login" action="#" method="post">
-	  					<label class="visually-hidden" for="email">Ваш E-mail</label>
 				  		<input class="input-field" type="email" name="email" id="login-email" placeholder="Электронная почта">
-				  		<label class="visually-hidden" for="password">Ваш пароль</label>
+	  					<label class="input-label" for="email">Ваш E-mail</label>
 				  		<input class="input-field" type="password" name="password" id="password" placeholder="Пароль">
+				  		<label class="input-label" for="password">Ваш пароль</label>
 				  		<div class="modal-login-enter">
 					  		<button type="button" class="btn btn-enter">Войти</button>
 					  		<div class="modal-login-forgot">
@@ -151,7 +151,10 @@
 		  		<div class="spam-wrapper">
 		  			<p>Подпишитесь на нашу сладкую рассылку
 					и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
-					<input class="input-field" type="email" name="email" placeholder="Электронная почта">
+					<div class="input-label-wrapper">
+						<input class="input-field" type="email" name="email" placeholder="Электронная почта">
+	  					<label class="input-label" for="search">Электронная почта</label>
+					</div>
 					<button type="submit" class="btn btn-send-email">Отправить</button>
 		  		</div>
 		  	</article>
