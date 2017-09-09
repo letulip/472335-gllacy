@@ -10,43 +10,41 @@
   <body>
   <div class="page-wrapper catalog-body">
     <div class="container">
-
-  	  <header class="page-header">
+      <header class="page-header">
         <div class="header-navigation-wrapper">
-          <div class="nav-wrapper">
-            <a href="index.html"><img class="header-logo" src="img/logo.svg" width="154" height="64" alt="Gllacy Shop"></a>
-            <nav class="header-menu">
-              <a class="active-page drop-down-menu" href="catalog.html">Каталог</a>
+          <!-- <nav class="header-menu"> -->
+            <ul class="header-menu">
+              <li class="header-menu-item"><a class="header-menu-logo"><img class="header-logo" src="img/logo.svg" width="154" height="64" alt="Gllacy Shop"></a></li>
+              <li class="header-menu-item"><a href="" class="header-menu-link drop-down-menu active-page">Каталог</a>
                 <ul class="drop-down-catalog">
                   <li><a class="drop-down-item" href="catalog.html">Новинки</a></li>
-                  <li class="active-page-catalog"><a class="drop-down-item" href="catalog.html">Сливочное</a></li>
+                  <li><a class="drop-down-item" href="catalog.html">Сливочное</a></li>
                   <li><a class="drop-down-item" href="catalog.html">Щербеты</a></li>
                   <li><a class="drop-down-item" href="catalog.html">Фруктовый лед</a></li>
                   <li><a class="drop-down-item" href="catalog.html">Мелорин</a></li>
                 </ul>
-              <a href="#">Доставка и оплата</a>
-              <a href="#">О Компании</a>
-            </nav>
-          </div>
-
+              </li>
+              <li class="header-menu-item"><a href="pay-delivery.html" class="header-menu-link">Доставка и оплата</a></li>
+              <li class="header-menu-item"><a href="about.html" class="header-menu-link">О Компании</a></li>
+            </ul>
+          <!-- </nav> -->
           <div class="breadcrumbs">
             <a class="bc-nav" href="index.html">Главная</a>
             <a class="bc-nav"  href="#">Каталог</a>
             <a class="bc-nav bc-nav-active"  href="#">Сливочное</a>
           </div>
         </div>
-      
         <div class="header-user-menu">
           <div class="header-user-navigation">
             <div class="header-user-search user-nav-bg">
-              <p class="search-icon popup">Поиск</p>
+              <a href="search.html" class="search-icon popup">Поиск</p>
               <form class="modal modal-search" action="#" method="get">
                 <label class="visually-hidden" for="search">Поиск</label>
                 <input class="input-field" type="search" name="search" id="search" placeholder="Что ищем?">
               </form>
             </div>
             <div class="header-user-login user-nav-bg">
-              <p class="login-icon popup">Вход</p>
+              <a href="login.html" class="login-icon popup">Вход</p>
               <form class="modal modal-login" action="#" method="post">
                 <label class="visually-hidden" for="email">Ваш E-mail</label>
                 <input class="input-field" type="email" name="email" id="login-email" placeholder="Электронная почта">
@@ -62,7 +60,7 @@
               </form>
             </div>
             <div class="header-user-cart user-nav-bg">
-              <p class="cart-icon popup">2 товара</p>
+              <a href="cart.html" class="cart-icon popup">2 товара</p>
               <section class="modal modal-cart">
                 <h2 class="visually-hidden">Корзина</h2>
                 <table class="cart-table">
@@ -107,7 +105,7 @@
               </select>
             </div>
           </fieldset>
-            
+
           <fieldset>
             <legend>Цена: 100 руб. - 500 руб.</legend>
             <div class="field-wrapper field-price">
@@ -168,7 +166,7 @@
           <button type="button" class="btn btn-catalog-item">Быстрый просмотр</button>
         </article>
         <article class="catalog-item">
-          <img src="img/cream-straw.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="267" height="267"> 
+          <img src="img/cream-straw.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="267" height="267">
           <p class="price">355<span class="ruble">Р</span><span class="kilo">/кг</span></p>
           <h3 class="h3-heading hits-item-title"><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></h3>
           <button type="button" class="btn btn-catalog-item">Быстрый просмотр</button>
@@ -240,7 +238,7 @@
         </div>
       </section>
 
-    	<footer class="page-footer">
+      <footer class="page-footer">
           <section class="footer-social">
             <a class="social-btn btn-tw" href="#"><span class="visually-hidden">Twitter</span></a>
             <a class="social-btn btn-in" href="#"><span class="visually-hidden">Instagram</span></a>
