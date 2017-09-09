@@ -1486,12 +1486,12 @@ select[id="sorting"]:focus {
 	margin: auto;
 	border: 3px solid rgba(255,255,255,1);
 	border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .btn-tw::before {
 	background-image: url("../img/twitter.svg");
-	background-repeat: no-repeat;
-	background-position: 0 0;
 }
 
 .btn-in::before {
