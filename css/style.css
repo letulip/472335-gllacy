@@ -258,8 +258,17 @@ body {
 	position: relative;
 }
 
-.bc-nav::after {
+.bc-nav:not(.bc-nav-active)::after {
 	content: "";
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  top: 2px;
+  left: 105%;
+
+  background-image: url(../img/bc-arrow.svg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
 }
 
 .bc-nav-active {
