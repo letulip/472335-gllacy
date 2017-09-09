@@ -1000,34 +1000,26 @@ input[type=radio] {
   left: -25px;
 }
 
-.header-user-cart-empty .cart-icon::before {
-  background-image: url("../img/entrance-off.svg");
-  top: 0;
-  left: -25px;
-}
-
-.cart-icon::before {
-	background-image: url("../img/entrance-off.svg");
-}
-
 .header-user-login:hover .login-icon::before,
 .header-user-login:focus .login-icon::before {
-	background-image: url("../img/entrance.svg");
+  background-image: url("../img/entrance.svg");
 }
 
 /*.header-user-login:hover .modal-login,
 .header-user-login:focus .modal-login {
-	display: flex;
+  display: flex;
 }*/
 
 .header-user-cart,
 .header-user-cart-empty {
-	width: 117px;
-	padding-left: 43px;
+  width: 117px;
+  padding-left: 43px;
 }
 
-.header-user-cart-empty .cart-icon::before {
+.cart-icon::before {
 	background-image: url("../img/basket-off.svg");
+  top: 0;
+  left: -25px;
 }
 
 .header-user-cart-empty:hover .cart-icon::before,
@@ -1035,7 +1027,7 @@ input[type=radio] {
 	background-image: url("../img/basket.svg");
 }
 
-.cart-icon::before {
+.header-user-cart .cart-icon::before {
 	background-image: url("../img/basket-red.svg");
 }
 
