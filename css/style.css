@@ -702,11 +702,11 @@ input[type=radio] {
 }
 
 .seo li {
-  -ms-flex-preferred-size: 535px;
-      flex-basis: 535px;
+  -ms-flex-preferred-size: 480px;
+      flex-basis: 480px;
   padding-bottom: 25px;
   position: relative;
-  padding-left: 55px;
+  margin-left: 55px;
 }
 
 .seo li::before {
@@ -715,7 +715,7 @@ input[type=radio] {
   width: 52px;
   height: 52px;
   top: -10px;
-  left: -5px;
+  left: -55px;
 
   background-image: url("../img/ice-cream.svg");
   background-repeat: no-repeat;
