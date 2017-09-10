@@ -638,6 +638,8 @@ input[type=radio] {
 .item-title {
   margin-top: 13px;
   padding: 0 10px;
+  width: 100%;
+  min-width: 274px;
 }
 
 .hits-item-title a,
@@ -1527,7 +1529,7 @@ select[id="sorting"]:focus {
   margin-left: 0;
 }
 
-.catalog-item::before {
+.catalog-item::after {
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 5px;
   min-height: 405px;
@@ -1538,7 +1540,6 @@ select[id="sorting"]:focus {
     display: none;
     content: '';
     position: absolute;
-    z-index: 10;
 }
 
 .catalog-item img {
@@ -1556,7 +1557,7 @@ select[id="sorting"]:focus {
     width: 200px;
 }
 
-.hit::after {
+.hit::before {
   content: "";
   position: absolute;
   width: 62px;
@@ -1571,8 +1572,8 @@ select[id="sorting"]:focus {
   z-index: 11;
 }
 
-.catalog-item:hover::before,
-.catalog-item:focus::before {
+.catalog-item:hover::after,
+.catalog-item:focus::after {
   display: block;
 }
 
