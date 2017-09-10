@@ -628,10 +628,9 @@ input[type=radio] {
 }
 
 .btn-add-jam, .btn-add-choco {
-  margin-left: auto;
-  -ms-margin-left: 63%;
   margin-top: auto;
   padding: 10px 20px;
+  align-self: flex-end;
 }
 
 .hits-item-title,
