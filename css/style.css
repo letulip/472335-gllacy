@@ -1038,6 +1038,7 @@ input[type=radio] {
           justify-content: space-between;
   margin-top: 18px;
   padding-top: 5px;
+  padding-left: 0;
   position: relative;
   list-style: none;
 }
@@ -1072,8 +1073,6 @@ input[type=radio] {
   position: absolute;
   width: 23px;
   height: 21px;
-  left: 7px;
-  top: 5px;
 
   background-image: url("../img/loupe-off.svg");
   background-repeat: no-repeat;
@@ -1081,13 +1080,14 @@ input[type=radio] {
 }
 
 .header-user-search {
-  font-size: 0;
-  width: 33px;
+  /*font-size: 0;*/
+  width: 100%;
+  min-width: 33px;
 }
 
 .search-icon::before {
-  left: -4px;
-  top: -8px;
+  top: 0;
+  left: -5px;
 }
 
 .header-user-search:hover .search-icon::before,
@@ -1101,7 +1101,8 @@ input[type=radio] {
 }*/
 
 .header-user-login {
-  width: 92px;
+  width: 100%;
+  min-width: 92px;
   padding-left: 43px;
 }
 
@@ -1123,7 +1124,8 @@ input[type=radio] {
 
 .header-user-cart,
 .header-user-cart-empty {
-  width: 117px;
+  width: 100%;
+  min-width: 117px;
   padding-left: 43px;
 }
 
