@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
-    <link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=latin,greek,greek-ext,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -30,8 +30,8 @@
           <!-- </nav> -->
           <div class="breadcrumbs">
             <a class="bc-nav" href="index.html">Главная</a>
-            <a class="bc-nav"  href="#">Каталог</a>
-            <a class="bc-nav bc-nav-active"  href="#">Сливочное</a>
+            <a class="bc-nav" href="#">Каталог</a>
+            <a class="bc-nav bc-nav-active">Сливочное</a>
           </div>
         </div>
         <div class="header-user-wrapper">
@@ -133,7 +133,7 @@
               <label for="field-fat-2">до 10%</label>
               <input type="radio" name="field-fat" id="field-fat-3" value="field-fat-3">
               <label for="field-fat-3">до 30%</label>
-              <input type="radio" name="field-fat" id="field-fat-4" value="field-fat-4">
+              <input type="radio" name="field-fat" id="field-fat-4" value="field-fat-4" disabled>
               <label for="field-fat-4">выше 30%</label>
             </div>
           </fieldset>
@@ -149,7 +149,7 @@
               <label for="fruit">фрукты</label>
               <input type="checkbox" id="sirup" name="sirup">
               <label for="sirup">сиропы</label>
-              <input type="checkbox" id="jam" name="jam">
+              <input type="checkbox" id="jam" name="jam" disabled>
               <label for="jam">джемы</label>
             </div>
           </fieldset>
@@ -234,23 +234,31 @@
           <button type="button" class="btn btn-catalog-item">Быстрый просмотр</button>
         </article>
         <div class="pagination">
-          <a class="arrow">&lt;</a>
+          <a class="arrow arrow-prev" href="#">&lt;</a>
           <a class="paginator active" href="#">1</a>
           <a class="paginator" href="#">2</a>
           <a class="paginator" href="#">3</a>
           <a class="paginator" href="#">4</a>
           <a class="paginator" href="#">5</a>
-          <a class="arrow">&gt;</a>
+          <a class="arrow arrow-next" href="#">&gt;</a>
         </div>
       </section>
 
       <footer class="page-footer">
-          <section class="footer-social">
-            <a class="social-btn btn-tw" href="#">Twitter</a>
-            <a class="social-btn btn-in" href="#">Instagram</a>
-            <a class="social-btn btn-fb" href="#">Facebook</a>
-            <a class="social-btn btn-vk" href="#">Вконтакте</a>
-          </section>
+          <ul class="footer-social">
+            <li class="social-btn btn-tw">
+              <a href="#">Twitter</a>
+            </li>
+            <li class="social-btn btn-in">
+              <a href="#">Instagram</a>
+            </li>
+            <li class="social-btn btn-fb">
+              <a href="#">Facebook</a>
+            </li>
+            <li class="social-btn btn-vk">
+              <a href="#">Вконтакте</a>
+            </li>
+          </ul>
             <ul class="footer-nav-list">
               <li class="footer-nav-item"><a class="footer-nav-link" href="#">Для поставщиков</a></li>
               <li class="footer-nav-item"><a class="footer-nav-link" href="#">Наши документы</a></li>

@@ -34,7 +34,7 @@ body {
 }
 
 .catalog-body {
-  background-image: -webkit-linear-gradient(top, rgba(255,255,255,0.4) 0%,rgba(255,255,255,0) 100%);
+  background-image: -webkit-linear-gradient(top, rgba(255,255,255,0.2) 0%,rgba(255,255,255,0) 610px);
 }
 
 .btn {
@@ -109,8 +109,8 @@ body {
 
 .catalog-header {
   text-align: left;
-  margin-top: 5px;
-  margin-bottom: 30px;
+  margin-top: 10px;
+  margin-bottom: 40px;
 }
 
 .banner-heading {
@@ -139,6 +139,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
   -ms-flex-preferred-size: 850px;
       flex-basis: 850px;
   line-height: 18px;
@@ -208,6 +209,7 @@ body {
   padding-left: 0;
   display: none;
   position: absolute;
+  top: 65%;
   z-index: 10;
 }
 
@@ -309,7 +311,7 @@ body {
   color: #323232;
   font-size: 13px;
   font-weight: normal;
-  margin-top: 5px;
+  top: 120%;
   right: 0;
   border-radius: 6px;
   -webkit-box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
@@ -563,6 +565,7 @@ body {
     cursor: pointer;
     border: 2px solid white;
     background-color: transparent;
+    cursor: pointer;
 }
 
 .promo-slider-controls label:hover {
@@ -1006,6 +1009,7 @@ input[type=radio] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1045,7 +1049,6 @@ input[type=radio] {
   margin-top: 18px;
   padding-top: 5px;
   padding-left: 0;
-  position: relative;
   list-style: none;
 }
 
@@ -1054,6 +1057,8 @@ input[type=radio] {
   border-radius: 15px/50%;
   padding: 8px 13px;
   margin-left: 10px;
+  position: relative;
+  height: 33px;
 }
 
 .user-nav-bg:hover,
@@ -1101,10 +1106,10 @@ input[type=radio] {
   background-image: url("../img/loupe.svg");
 }
 
-/*.header-user-search:hover .modal-search,
+.header-user-search:hover .modal-search,
 .header-user-search:focus .modal-search {
   display: flex;
-}*/
+}
 
 .header-user-login {
   width: 100%;
@@ -1123,10 +1128,10 @@ input[type=radio] {
   background-image: url("../img/entrance.svg");
 }
 
-/*.header-user-login:hover .modal-login,
+.header-user-login:hover .modal-login,
 .header-user-login:focus .modal-login {
   display: flex;
-}*/
+}
 
 .header-user-cart,
 .header-user-cart-empty {
@@ -1177,6 +1182,7 @@ input[type=radio] {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  flex-basis: 100%;
 }
 
 .header-contacts p {
@@ -1312,11 +1318,21 @@ input[type=radio] {
 
 .field-sort {
   min-width: 190px;
+  position: relative;
+  background-image: url(../img/select-arrow-off.svg);
+  background-repeat: no-repeat;
+  background-position: 90% 50%;
+  background-size: 11px 10px;
+}
+
+input:disabled + label {
+  opacity: 0.4;
 }
 
 .field-sort:hover,
 .field-sort:focus {
   background-color: #fff;
+  background-image: url(../img/select-arrow.svg);
 }
 
 .field-sort:hover select[id="sorting"],
@@ -1329,6 +1345,9 @@ select[id="sorting"] {
   background-color: transparent;
   padding-left: 5px;
   color: #fff;
+  -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
 }
 
 select[id="sorting"]:hover,
@@ -1380,6 +1399,7 @@ select[id="sorting"]:focus {
   background-color: transparent;
   border-radius: 50%;
   opacity: 0.8;
+  cursor: pointer;
 }
 
 .field-fat label:hover::before,
@@ -1406,6 +1426,7 @@ select[id="sorting"]:focus {
 .field-fill label::before {
   background-image: url("../img/checkbox-off.svg");
   border-radius: 0;
+  cursor: pointer;
 }
 
 #choclate:checked ~ label[for="choclate"]::before,
@@ -1494,7 +1515,8 @@ select[id="sorting"]:focus {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-top: 20px;
-  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .catalog-item {
@@ -1601,7 +1623,6 @@ select[id="sorting"]:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-right: 20px;
   margin-top: 55px;
 }
 
@@ -1783,7 +1804,7 @@ select[id="sorting"]:focus {
 
 .input-label {
   display: none;
-  color: blue;
+  color: #5b9ddf;
   position: absolute;
   top: -15px;
   left: 10px;
