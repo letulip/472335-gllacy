@@ -442,6 +442,7 @@ body {
   width: 478px;
   min-height: 443px;
   bottom: 0;
+  top: -100px;
   right: 100%;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
