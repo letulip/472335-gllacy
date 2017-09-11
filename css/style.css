@@ -773,6 +773,7 @@ input[type=radio] {
   background-position: -50px -220px;
   border-radius: 15px;
   padding: 20px;
+  min-height: 220px;
 }
 
 .news a {
@@ -792,6 +793,7 @@ input[type=radio] {
   background-image: -o-repeating-linear-gradient(315deg, #f8f7f4, #f8f7f4 7px, #94ceff 7px, #94ceff 14px, #f8f7f4 14px, #f8f7f4 21px, #fe9e90 21px, #fe9e90 28px);
   background-image: repeating-linear-gradient(135deg, #f8f7f4, #f8f7f4 7px, #94ceff 7px, #94ceff 14px, #f8f7f4 14px, #f8f7f4 21px, #fe9e90 21px, #fe9e90 28px);
   border-radius: 15px;
+  min-height: 220px;
 }
 
 .spam-wrapper {
@@ -837,6 +839,11 @@ input[type=radio] {
   background-repeat: no-repeat;
   background-position: 50% -110px;
   margin-top: 40px;
+  position: relative;
+}
+
+.ya-map {
+
 }
 
 .question-title {
@@ -874,6 +881,7 @@ input[type=radio] {
       -ms-flex-pack: end;
           justify-content: flex-end;
   position: relative;
+  top: -100%;
 }
 
 .contacts::before {
@@ -900,11 +908,14 @@ input[type=radio] {
       flex-basis: 300px;
   margin-top: 62px;
   padding-left: 24px;
+  padding-right: 24px;
   padding-top: 29px;
   min-height: 300px;
   -ms-flex-item-align: center;
       align-self: center;
-  position: relative;
+  position: absolute;
+  top: -5px;
+  right: 30px;
 }
 
 .contacts b {
