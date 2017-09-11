@@ -147,6 +147,7 @@ body {
   list-style: none;
   padding: 0;
   margin-top: 30px;
+  margin-bottom: 0;
 }
 
 .header-menu-logo {
@@ -263,11 +264,13 @@ body {
   font-size: 14px;
   line-height: 16px;
   font-weight: 500;
+  margin-bottom: 0;
 }
 
 .breadcrumbs {
   margin-top: auto;
-  width: 100%
+  width: 100%;
+  align-self: flex-end;
 }
 
 .bc-nav {
@@ -633,6 +636,7 @@ input[type=radio] {
 
 .btn-add-jam, .btn-add-choco {
   margin-top: auto;
+  margin-bottom: 5px;
   padding: 10px 20px;
   align-self: flex-end;
 }
@@ -749,7 +753,7 @@ input[type=radio] {
       -ms-flex-pack: justify;
           justify-content: space-between;
   min-height: 220px;
-  margin-top: 35px;
+  margin-top: 40px;
 }
 
 .news-title {
@@ -807,7 +811,7 @@ input[type=radio] {
 
 .spam p {
   width: 100%;
-  margin-bottom: 37px;
+  margin-bottom: 15px;
   margin-top: 10px;
 }
 
@@ -815,6 +819,7 @@ input[type=radio] {
   border-color: #b2b2b2;
   color: #b2b2b2;
   margin: auto;
+  margin-top: 0;
 }
 
 .btn-send-email {
@@ -935,12 +940,11 @@ input[type=radio] {
 
 .contacts p:nth-child(7) {
   margin-top: 2px;
-  margin-bottom: 28px;
+  margin-bottom: 20px;
 }
 
 .btn-contact-us {
   padding: 10px 25px;
-  /*position: relative;*/
 }
 
 .paginator {
@@ -1165,6 +1169,12 @@ input[type=radio] {
   display: flex;
 }
 
+.wrapper {
+  flex-basis: 100%;
+  display: flex;
+  /*margin-top: -10px;*/
+}
+
 .header-contacts {
   display: -moz-flex;
   display: -ms-flex;
@@ -1172,9 +1182,6 @@ input[type=radio] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1186,7 +1193,7 @@ input[type=radio] {
 }
 
 .header-contacts p {
-  margin-top: 3px;
+  margin-top: -5px;
   margin-bottom: 5px;
 }
 
@@ -1245,13 +1252,6 @@ input[type=radio] {
   display: flex;
 }
 
-/*.slides {
-  display: flex;
-  flex-basis: 1200px;
-  align-items: center;
-    transition: transform 0.8s ease;
-}*/
-
 .banners {
   display: -moz-flex;
   display: -ms-flex;
@@ -1262,7 +1262,7 @@ input[type=radio] {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 40px;
+  margin-top: 35px;
 }
 
 .hits {
