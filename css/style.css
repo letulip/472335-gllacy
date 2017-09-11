@@ -214,7 +214,7 @@ body {
 }
 
 .drop-down-menu:hover .drop-down-catalog,
-.drop-down-menu:focus .drop-down-catalog {
+.header-menu-link:focus + .drop-down-catalog {
   display: block;
 }
 
