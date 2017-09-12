@@ -5,10 +5,10 @@ var closeSendQuestion = document.querySelector(".close");
 var popupSendQuestion = document.querySelector(".modal-contact-us");
 
 if(showSendQuestion){
-	showSendQuestion.onclick = function (evt) {
-		evt.preventDefault();
-		popupSendQuestion.classList.toggle("modal-show");
-	}
+  showSendQuestion.onclick = function (evt) {
+    evt.preventDefault();
+    popupSendQuestion.classList.toggle("modal-show");
+  }
 }
 
 if(closeSendQuestion){

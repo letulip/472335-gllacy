@@ -141,8 +141,9 @@ body {
   display: -ms-flexbox;
   display: flex;
   flex-wrap: wrap;
-  -ms-flex-preferred-size: 850px;
-      flex-basis: 850px;
+  -ms-flex-preferred-size: 680px;
+      flex-basis: 680px;
+  max-width: 680px;
   line-height: 18px;
   position: relative;
   list-style: none;
@@ -1043,14 +1044,7 @@ input[type=radio] {
 }
 
 .visually-hidden {
-  position: absolute !important;
-  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-  clip: rect(1px, 1px, 1px, 1px);
-  padding:0 !important;
-  border:0 !important;
-  height: 1px !important;
-  width: 1px !important;
-  overflow: hidden;
+  display: none;
 }
 
 /*flex positioning*/
@@ -1063,9 +1057,6 @@ input[type=radio] {
   display: -ms-flexbox;
   display: flex;
   flex-wrap: wrap;
-/*  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;*/
 }
 
 .header-logo {
@@ -1273,11 +1264,8 @@ input[type=radio] {
       align-content: center;
   -ms-flex-preferred-size: 1146px;
       flex-basis: 1146px;
-  /*min-height: 490px;*/
-  /*IE не воспринимает min-height во flex-контейнере,
-  решение с !important нужно для корректного позиционирования в IE*/
   height: auto;
-  min-height: 100% !important;
+  min-height: 100%;
 }
 
 #promo-1:checked ~ .page-wrapper .promo-slider-slides:nth-child(1) {
