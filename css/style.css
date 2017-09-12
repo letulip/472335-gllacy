@@ -593,17 +593,17 @@ body {
 .promo-slider-controls label {
   font-size: 0;
   display: inline-block;
-    width: 20px;
-    height: 20px;
-    margin: 0 3px;
-    border-radius: 50%;
-    -webkit-box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.8);
-            box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.8);
-    cursor: pointer;
-    border: 2px solid white;
-    background-color: transparent;
-    cursor: pointer;
-    vertical-align: bottom;
+  width: 20px;
+  height: 20px;
+  margin: 0 3px;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.8);
+          box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  border: 2px solid white;
+  background-color: transparent;
+  cursor: pointer;
+  vertical-align: bottom;
 }
 
 .promo-slider-controls label:hover {
@@ -759,7 +759,6 @@ input[type=radio] {
   height: 52px;
   top: -10px;
   left: -55px;
-
   background-image: url("../img/ice-cream.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -929,7 +928,6 @@ input[type=radio] {
   height: 140px;
   top: 80px;
   right: 825px;
-
   background-image: url("../img/pin.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -1056,7 +1054,8 @@ input[type=radio] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .header-logo {
@@ -1124,7 +1123,6 @@ input[type=radio] {
   position: absolute;
   width: 23px;
   height: 21px;
-
   background-image: url("../img/loupe-off.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -1332,7 +1330,6 @@ input[type=radio] {
 }
 
 .filters legend {
-  margin-top: 10px;
   margin-bottom: 5px;
   font-size: 14px;
   line-height: 16px;
@@ -1387,8 +1384,8 @@ select[id="sorting"] {
   padding-left: 5px;
   color: #fff;
   -webkit-appearance: none;
-   -moz-appearance: none;
-   appearance: none;
+    -moz-appearance: none;
+  appearance: none;
 }
 
 select[id="sorting"]:hover,
@@ -1432,7 +1429,6 @@ select[id="sorting"]:focus {
   height: 25px;
   top: -2px;
   left: -30px;
-
   background-image: url("../img/radio-off.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -1730,7 +1726,6 @@ select[id="sorting"]:focus {
   height: 19px;
   top: 2px;
   left: -20px;
-
   background-image: url("../img/heart.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -1822,7 +1817,6 @@ select[id="sorting"]:focus {
   height: 40px;
   top: 18px;
   left: 4px;
-
   background-image: url("../img/logo-htmlacademy.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
