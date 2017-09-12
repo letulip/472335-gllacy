@@ -469,18 +469,19 @@ body {
 }
 
 .modal-contact-us {
+  position: fixed;
   border-radius: 10px;
   width: 478px;
   min-height: 443px;
-  bottom: 0;
-  top: -100px;
-  right: 100%;
+  top: calc(50% - 200px);
+  right: calc(50% - 219px);
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  z-index: 11;
 }
 
 .close {
@@ -1187,6 +1188,14 @@ input[type=radio] {
   display: flex;
 }
 
+.header-user-cart {
+  background-color: #fff;
+}
+
+.header-user-cart .cart-icon {
+  color: #333;
+}
+
 .header-user-cart,
 .header-user-cart-empty {
   width: 100%;
@@ -1406,7 +1415,7 @@ select[id="sorting"]:focus {
 }
 
 .field-price:hover {
-  cursor: pointer;
+  /*cursor: pointer;*/
 }
 
 .field-fat {
@@ -1510,6 +1519,7 @@ select[id="sorting"]:focus {
   background-image: url(../img/filter-button.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
+  cursor: pointer;
 }
 
 .min {
