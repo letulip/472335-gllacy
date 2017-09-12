@@ -306,7 +306,7 @@ body {
   position: absolute;
   top: 90%;
   left: -50%;
-  width: 150%;
+  width: 200%;
   height: 20px;
 }
 
@@ -1119,6 +1119,12 @@ input[type=radio] {
 .search-icon::before {
   top: 0;
   left: -5px;
+}
+
+.search-icon::after {
+  width: 50px;
+  top: 15px;
+  left: -20px;
 }
 
 .header-user-search:hover .search-icon::before,
